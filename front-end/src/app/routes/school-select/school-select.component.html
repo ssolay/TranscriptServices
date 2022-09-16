@@ -1,0 +1,52 @@
+<form [formGroup]="formGroup" novalidate>
+  <nsc-card>
+    <nsc-card-title>Order a Transcript</nsc-card-title>
+    <nsc-card-content>
+      <div class="row">
+        <div class="col-12 col-md-8">
+          <nsc-form-field-autocomplete
+            controlName="school"
+            placeholder="{{ content.labelSchool }}"
+            [group]="formGroup"
+            [notInList]="false"
+            [options]="values.schools$.value"
+            [loading]="loadingSchools"></nsc-form-field-autocomplete>
+        </div>
+      </div>
+    </nsc-card-content>
+  </nsc-card>
+
+  <!--nsc-spacer size="md"></nsc-spacer>
+
+  <nsc-card>
+    <nsc-card-title note="(optional)">Uploads &amp; Attachments</nsc-card-title>
+    <nsc-card-content>
+      <div class="mat-subheading-1">Do you want to send additional documents with your transcript?</div>
+      <nsc-form-field-files
+        [url]="'https://evening-anchorage-3159.herokuapp.com/api/'"
+        [allowedFileTypes]="['gif', 'jpg', 'png', 'mp4']"
+        [maxFileCount]="3">
+      </nsc-form-field-files>
+    </nsc-card-content>
+  </nsc-card-->
+
+  <nsc-spacer size="md"></nsc-spacer>
+
+  <div class="nsc-form-actions">
+    <button
+      mat-raised-button
+      class="nsc-form-actions__button nsc-form-actions__button--next"
+      color="primary"
+      type="button"
+      [disabled]="!formGroup.valid"
+      (click)="continue()">Continue <mat-icon aria-hidden="true">chevron_right</mat-icon></button>
+  </div>
+</form>
+
+<!-- <nsc-spacer size="md"></nsc-spacer>
+<nsc-card>
+  <nsc-card-title note="development mode only">Form Data Model</nsc-card-title>
+  <nsc-card-content>
+    <textarea class="json">{{ formGroup.value | json }}</textarea>
+  </nsc-card-content>
+</nsc-card> -->

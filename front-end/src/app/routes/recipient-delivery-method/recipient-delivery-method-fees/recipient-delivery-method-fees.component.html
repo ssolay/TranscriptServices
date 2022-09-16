@@ -1,0 +1,64 @@
+<nsc-card>
+  <nsc-card-title>Fee Summary</nsc-card-title>
+  <nsc-card-content>
+    <div class="row">
+      <div class="col-12 col-lg-6">
+        <div class="nsc-table nsc-table--no-title mat-typography">
+          <div class="nsc-table__row" *ngIf="content.quantityFee">
+            <div class="nsc-table__col nsc-table__col--label nsc-table__col--form-field">
+              Transcript Fee
+            </div>
+            <div class="nsc-table__col nsc-table__col--value">
+              <strong>{{ content.quantityFee | currency }}</strong>
+            </div>
+          </div>
+
+          <div class="nsc-table__row" *ngIf="content.deliveryMethodFee">
+            <div class="nsc-table__col nsc-table__col--label">
+              {{ content.deliveryMethodLabel }}
+            </div>
+            <div class="nsc-table__col nsc-table__col--value">
+              <strong>{{ content.deliveryMethodFee | currency }}</strong>
+            </div>
+          </div>
+
+          <div class="nsc-table__row" *ngIf="content.transcriptTypeFee">
+            <div class="nsc-table__col nsc-table__col--label">
+              Transcript Type Fee
+            </div>
+            <div class="nsc-table__col nsc-table__col--value">
+              <strong>{{ content.transcriptTypeFee | currency }}</strong>
+            </div>
+          </div>
+
+          <div class="nsc-table__row" *ngIf="content.shippingHandlingFee">
+            <div class="nsc-table__col nsc-table__col--label">
+              Shipping and Handling Fee
+            </div>
+            <div class="nsc-table__col nsc-table__col--value">
+              <strong>{{ content.shippingHandlingFee | currency }}</strong>
+            </div>
+          </div>
+
+          <div class="nsc-table__row" *ngIf="content.onlineProcessingFee">
+            <div class="nsc-table__col nsc-table__col--label">
+              Online Processing Fee
+            </div>
+            <div class="nsc-table__col nsc-table__col--value">
+              <strong>{{ content.onlineProcessingFee | currency }}</strong>
+            </div>
+          </div>
+
+          <div class="nsc-table__row">
+            <div class="nsc-table__col nsc-table__col--label" style="text-align: right">
+              <strong>Recipient Fee Total</strong>
+            </div>
+            <div class="nsc-table__col nsc-table__col--value nsc-table__col--total">
+              <strong>{{ content.totalFees | currency }}</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nsc-card-content>
+</nsc-card>

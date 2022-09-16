@@ -1,0 +1,17 @@
+@import '~breakpoint-sass/stylesheets/breakpoint';
+@import '~styles/variables';
+
+.nsc-card-content {
+  padding: 20px;
+
+  @include breakpoint($breakpoint-md) {
+    padding: 35px 45px;
+  }
+
+  // used in the stepper - can be used elsewhere;
+  &--tight {
+    @include breakpoint($breakpoint-md) {
+      padding: 25px 35px;
+    }
+  }
+}

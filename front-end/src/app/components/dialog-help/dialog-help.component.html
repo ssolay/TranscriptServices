@@ -1,0 +1,8 @@
+<h2 mat-dialog-title *ngIf="data.title">{{ data.title }}</h2>
+<mat-dialog-content>
+  <div [innerHTML]="data.body" class="mat-typography"></div>
+  <nsc-spacer size="md"></nsc-spacer>
+  <p style="text-align: center;">
+    <button mat-button class="nsc-button" (click)="close()">Close</button>
+  </p>
+</mat-dialog-content>

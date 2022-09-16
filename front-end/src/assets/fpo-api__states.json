@@ -1,0 +1,381 @@
+[
+  {
+    "code": "AL",
+    "description": "Alabama",
+    "category": "U"
+  },
+  {
+    "code": "AK",
+    "description": "Alaska",
+    "category": "U"
+  },
+  {
+    "code": "AZ",
+    "description": "Arizona",
+    "category": "U"
+  },
+  {
+    "code": "AR",
+    "description": "Arkansas",
+    "category": "U"
+  },
+  {
+    "code": "CA",
+    "description": "California",
+    "category": "U"
+  },
+  {
+    "code": "CO",
+    "description": "Colorado",
+    "category": "U"
+  },
+  {
+    "code": "CT",
+    "description": "Connecticut",
+    "category": "U"
+  },
+  {
+    "code": "DE",
+    "description": "Delaware",
+    "category": "U"
+  },
+  {
+    "code": "DC",
+    "description": "District of Columbia",
+    "category": "U"
+  },
+  {
+    "code": "FL",
+    "description": "Florida",
+    "category": "U"
+  },
+  {
+    "code": "GA",
+    "description": "Georgia",
+    "category": "U"
+  },
+  {
+    "code": "HI",
+    "description": "Hawaii",
+    "category": "U"
+  },
+  {
+    "code": "ID",
+    "description": "Idaho",
+    "category": "U"
+  },
+  {
+    "code": "IL",
+    "description": "Illinois",
+    "category": "U"
+  },
+  {
+    "code": "IN",
+    "description": "Indiana",
+    "category": "U"
+  },
+  {
+    "code": "IA",
+    "description": "Iowa",
+    "category": "U"
+  },
+  {
+    "code": "KS",
+    "description": "Kansas",
+    "category": "U"
+  },
+  {
+    "code": "KY",
+    "description": "Kentucky",
+    "category": "U"
+  },
+  {
+    "code": "LA",
+    "description": "Louisiana",
+    "category": "U"
+  },
+  {
+    "code": "ME",
+    "description": "Maine",
+    "category": "U"
+  },
+  {
+    "code": "MD",
+    "description": "Maryland",
+    "category": "U"
+  },
+  {
+    "code": "MA",
+    "description": "Massachusetts",
+    "category": "U"
+  },
+  {
+    "code": "MI",
+    "description": "Michigan",
+    "category": "U"
+  },
+  {
+    "code": "MN",
+    "description": "Minnesota",
+    "category": "U"
+  },
+  {
+    "code": "MS",
+    "description": "Mississippi",
+    "category": "U"
+  },
+  {
+    "code": "MO",
+    "description": "Missouri",
+    "category": "U"
+  },
+  {
+    "code": "MT",
+    "description": "Montana",
+    "category": "U"
+  },
+  {
+    "code": "NE",
+    "description": "Nebraska",
+    "category": "U"
+  },
+  {
+    "code": "NV",
+    "description": "Nevada",
+    "category": "U"
+  },
+  {
+    "code": "NH",
+    "description": "New Hampshire",
+    "category": "U"
+  }, {
+    "code": "NJ",
+    "description": "New Jersey",
+    "category": "U"
+  },
+  {
+    "code": "NM",
+    "description": "New Mexico",
+    "category": "U"
+  },
+  {
+    "code": "NY",
+    "description": "New York",
+    "category": "U"
+  },
+  {
+    "code": "NC",
+    "description": "North Carolina",
+    "category": "U"
+  },
+  {
+    "code": "ND",
+    "description": "North Dakota",
+    "category": "U"
+  },
+  {
+    "code": "OH",
+    "description": "Ohio",
+    "category": "U"
+  },
+  {
+    "code": "OK",
+    "description": "Oklahoma",
+    "category": "U"
+  },
+  {
+    "code": "OR",
+    "description": "Oregon",
+    "category": "U"
+  },
+  {
+    "code": "PA",
+    "description": "Pennsylvania",
+    "category": "U"
+  },
+  {
+    "code": "RI",
+    "description": "Rhode Island",
+    "category": "U"
+  },
+  {
+    "code": "SC",
+    "description": "South Carolina",
+    "category": "U"
+  },
+  {
+    "code": "SD",
+    "description": "South Dakota",
+    "category": "U"
+  },
+  {
+    "code": "TN",
+    "description": "Tennessee",
+    "category": "U"
+  },
+  {
+    "code": "TX",
+    "description": "Texas",
+    "category": "U"
+  },
+  {
+    "code": "UT",
+    "description": "Utah",
+    "category": "U"
+  },
+  {
+    "code": "VT",
+    "description": "Vermont",
+    "category": "U"
+  },
+  {
+    "code": "VA",
+    "description": "Virginia",
+    "category": "U"
+  },
+  {
+    "code": "WA",
+    "description": "Washington",
+    "category": "U"
+  },
+  {
+    "code": "WV",
+    "description": "West Virginia",
+    "category": "U"
+  },
+  {
+    "code": "WI",
+    "description": "Wisconsin",
+    "category": "U"
+  },
+  {
+    "code": "WY",
+    "description": "Wyoming",
+    "category": "U"
+  },
+  {
+    "code": "AS",
+    "description": "American Samoa",
+    "category": "T"
+  },
+  {
+    "code": "FM",
+    "description": "Federated States of Micronesia",
+    "category": "T"
+  },
+  {
+    "code": "GU",
+    "description": "Guam",
+    "category": "T"
+  },
+  {
+    "code": "MH",
+    "description": "Marshall Islands",
+    "category": "T"
+  },
+  {
+    "code": "MP",
+    "description": "Northern Mariana Islands",
+    "category": "T"
+  },
+  {
+    "code": "PW",
+    "description": "Palau Islands",
+    "category": "T"
+  },
+  {
+    "code": "PR",
+    "description": "Puerto Rico",
+    "category": "T"
+  },
+  {
+    "code": "VI",
+    "description": "US Virgin Islands",
+    "category": "T"
+  },
+  {
+    "code": "ZZ",
+    "description": "International",
+    "category": "I"
+  },
+  {
+    "code": "AB",
+    "description": "Alberta",
+    "category": "C"
+  },
+  {
+    "code": "BC",
+    "description": "British Columbia",
+    "category": "C"
+  },
+  {
+    "code": "MB",
+    "description": "Manitoba",
+    "category": "C"
+  },
+  {
+    "code": "NB",
+    "description": "New Brunswick",
+    "category": "C"
+  },
+  {
+    "code": "NL",
+    "description": "Newfoundland and Labrador",
+    "category": "C"
+  },
+  {
+    "code": "NT",
+    "description": "Northwest Territories",
+    "category": "C"
+  },
+  {
+    "code": "NS",
+    "description": "Nova Scotia",
+    "category": "C"
+  },
+  {
+    "code": "NU",
+    "description": "Nunavut",
+    "category": "C"
+  },
+  {
+    "code": "ON",
+    "description": "Ontario",
+    "category": "C"
+  },
+  {
+    "code": "PE",
+    "description": "Prince Edward Island",
+    "category": "C"
+  },
+  {
+    "code": "QC",
+    "description": "Quebec",
+    "category": "C"
+  },
+  {
+    "code": "SK",
+    "description": "Saskatchewan",
+    "category": "C"
+  },
+  {
+    "code": "YT",
+    "description": "Yukon Territory",
+    "category": "C"
+  },
+  {
+    "code": "AA",
+    "description": "AA: Armed Forces Americas (except Canada)",
+    "category": "A"
+  },
+  {
+    "code": "AE",
+    "description": "AE: Armed Forces Africa, Canada, Europe, Middle East",
+    "category": "A"
+  },
+  {
+    "code": "AP",
+    "description": "AP: Armed Forces Pacific",
+    "category": "A"
+  }
+]

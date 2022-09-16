@@ -1,0 +1,30 @@
+@import '~styles/variables';
+
+// flex layout for "label" and button form field
+.nsc-form-field-toggle {
+  align-items: center;
+  display: flex;
+  width: 100%;
+  padding: 0.4375em 0 1.25em; // Material .mat-form-field-infix;
+
+  &__label {
+    padding-right: 10px;
+  }
+
+  &__actions {
+    white-space: nowrap;
+    font-size: 0; // for spacer;
+
+    .mat-button {
+      min-width: 50px;
+    }
+  }
+
+  &__help {
+    padding-left: 10px;
+
+    .mat-icon {
+      cursor: pointer;
+    }
+  }
+}

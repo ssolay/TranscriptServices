@@ -1,0 +1,10 @@
+@import '~breakpoint-sass/stylesheets/breakpoint';
+@import '~styles/variables';
+
+.nsc-or {
+  padding-bottom: 1.75em;
+
+  @include breakpoint($breakpoint-md) {
+    padding-bottom: 0.75em;
+  }
+}

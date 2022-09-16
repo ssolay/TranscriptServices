@@ -1,0 +1,58 @@
+.overlay {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.5);
+    background: radial-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7));
+    z-index: 1000;
+}
+.treecontainer {
+    width: 150px;
+    height: 150px;
+    perspective: 400px;
+}
+.coinspin {
+    animation: coinspinAnim 3s ease infinite;
+}
+@keyframes coinspinAnim {
+    0%{transform: rotateY(0)}
+    50%{transform: rotateY(180deg)}
+    100%{transform: rotateY(359.5deg)}
+}
+.letterrow {
+    font-family: sans-serif;
+    font-size: 16px;
+    display: flex;
+    align-items: baseline;
+    line-height: 24px;
+    color: #606060;
+    justify-content: center;
+    color: white;
+}
+.letter {
+    position: relative;
+    text-align: center;
+    height: 24px;
+}
+.letterfold {
+    position: relative;
+    top: 0px;
+    transform: scaleX(0.0);
+    animation: letterfold 3s infinite linear
+}
+@keyframes letterfold {
+    0% {transform: scaleX(0.0);}
+    5% {transform: scaleX(1.0);}
+    60% {transform: scaleX(1.0);}
+    65% {transform: scaleX(0.0);}
+    100% {transform: scaleX(0.0);}
+}
+.hidden {
+    display: none;
+}

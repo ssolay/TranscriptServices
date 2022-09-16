@@ -1,0 +1,23 @@
+<form novalidate>
+  <div class="row">
+    <div class="col-12 col-md-10 offset-md-1 col-lg-8 offset-lg-2">
+      <nsc-card>
+        <nsc-card-title>{{ content.title }}</nsc-card-title>
+        <nsc-card-content>
+          <div class="mat-typography" [innerHTML]="content.message"></div>
+        </nsc-card-content>
+      </nsc-card>
+    </div>
+  </div>
+
+  <nsc-spacer size="md"></nsc-spacer>
+
+  <div class="nsc-form-actions">
+    <button
+      mat-raised-button
+      class="nsc-form-actions__button"
+      color="primary"
+      type="button"
+      (click)="restart()">Restart Order</button>
+  </div>
+</form>

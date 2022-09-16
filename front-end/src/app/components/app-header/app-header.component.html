@@ -1,0 +1,133 @@
+<div class="nsc-app-header"
+  [class.nsc-app-header--dark]="show.darkHeader"
+  [class.nsc-app-header--light]="!show.darkHeader"
+  [style.background-color]="content.headerBackgroundColor">
+  <div class="container">
+    <!-- mobile header; -->
+    <div class="row align-items-center nsc-app-header__row--sm">
+      <div class="col-12">
+        <div class="nsc-app-header__title mat-body-1">
+          Transcript Ordering Center
+        </div>
+      </div>
+    </div>
+    <div class="row nsc-app-header__row--sm">
+      <div class="col-12">
+        <!-- new column so we can adjust the gutters between columns, but still line up with the row above; -->
+        <div class="row nsc-row--12 align-items-center">
+          <div class="col">
+            <!-- new row so the content will only be as wide as the content; -->
+            <!-- the parent col needs to stretch the whole width, so the info link and cart are right aligned; -->
+            <div class="row nsc-row--12 align-items-center">
+              <div class="col-auto">
+                <img src="/assets/nsc-logo.svg"
+                  alt="National Student Clearinghouse"
+                  class="nsc-app-header__logo--nsc"
+                  *ngIf="!content.schoolLogoSrc" />
+                <span *ngIf="content.schoolName" class="mat-caption nsc-app-header__school-name">{{ content.schoolName }}</span>
+                <img src="{{ content.schoolLogoSrc }}"
+                  alt="{{ content.schoolLogoAlt }}"
+                  class="nsc-app-header__logo--school"
+                *ngIf="content.schoolLogoSrc" />
+              </div>
+            </div>
+          </div>
+
+          <div class="col-auto">
+            <div class="nsc-app-header__help">
+              <a href="http://google.com/">
+                <mat-icon class="nsc-app-header__icon">info</mat-icon>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-auto" *ngIf="show.cart">
+            <div class="nsc-app-header__cart">
+              <!-- disabled cart; -->
+              <div class="nsc-app-header__cart-content" *ngIf="content.shoppingCartCount === 0">
+                <div class="nsc-app-header__cart-disabled" [style.background-color]="content.headerBackgroundColor"></div>
+                <mat-icon class="nsc-app-header__icon">shopping_cart</mat-icon>
+                <strong class="nsc-app-header__cart-count mat-caption">{{ content.shoppingCartCount }}</strong>
+              </div>
+
+              <!-- enabled cart and enable link; -->
+              <button class="nsc-app-header__cart-content nsc-app-header__cart-content--button"
+                *ngIf="content.shoppingCartCount !== 0 && show.link"
+                (click)="goToOrderReview()">
+                <mat-icon class="nsc-app-header__icon">shopping_cart</mat-icon>
+                <strong class="nsc-app-header__cart-count mat-caption">{{ content.shoppingCartCount }}</strong>
+              </button>
+
+              <!-- enabled cart and disable link (because we're on the page the link points to); -->
+              <div class="nsc-app-header__cart-content" *ngIf="content.shoppingCartCount !== 0 && !show.link">
+                <mat-icon class="nsc-app-header__icon">shopping_cart</mat-icon>
+                <strong class="nsc-app-header__cart-count mat-caption">{{ content.shoppingCartCount }}</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- desktop header; -->
+    <div class="row nsc-app-header__row--md">
+      <div class="col-12">
+        <div class="row nsc-row--12 align-items-center">
+          <div class="col">
+            <div class="nsc-app-header__title mat-body-1">
+              Transcript Ordering Center
+            </div>
+          </div>
+
+          <div class="col-auto">
+            <img src="/assets/nsc-logo.svg"
+              alt="National Student Clearinghouse"
+              class="nsc-app-header__logo--nsc"
+              *ngIf="!content.schoolLogoSrc" />
+            <span *ngIf="content.schoolName" class="mat-typography nsc-app-header__school-name">{{ content.schoolName }}</span>
+            <img src="{{ content.schoolLogoSrc }}"
+              alt="{{ content.schoolLogoAlt }}"
+              class="nsc-app-header__logo--school"
+              *ngIf="content.schoolLogoSrc" />
+          </div>
+
+          <div class="col-auto">
+            <div class="nsc-app-header__help">
+              <a href="http://google.com/">
+                <mat-icon class="nsc-app-header__icon">info</mat-icon>
+                <span class="mat-caption">Help</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-auto" *ngIf="show.cart">
+            <div class="nsc-app-header__cart">
+              <!-- disabled cart; -->
+              <div class="nsc-app-header__cart-content" *ngIf="content.shoppingCartCount === 0">
+                <div class="nsc-app-header__cart-disabled" [style.background-color]="content.headerBackgroundColor"></div>
+                <mat-icon class="nsc-app-header__icon">shopping_cart</mat-icon>
+                <strong class="nsc-app-header__cart-count mat-caption">{{ content.shoppingCartCount }}</strong>
+              </div>
+
+              <!-- enabled cart and enable link; -->
+              <button class="nsc-app-header__cart-content nsc-app-header__cart-content--button"
+                *ngIf="content.shoppingCartCount !== 0 && show.link"
+                (click)="goToOrderReview()">
+                <mat-icon class="nsc-app-header__icon">shopping_cart</mat-icon>
+                <strong class="nsc-app-header__cart-count mat-caption">{{ content.shoppingCartCount }}</strong>
+              </button>
+
+              <!-- enabled cart and disable link (because we're on the page the link points to); -->
+              <div class="nsc-app-header__cart-content" *ngIf="content.shoppingCartCount !== 0 && !show.link">
+                <mat-icon class="nsc-app-header__icon">shopping_cart</mat-icon>
+                <strong class="nsc-app-header__cart-count mat-caption">{{ content.shoppingCartCount }}</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="nsc-app-header__band"></div>
+</div>

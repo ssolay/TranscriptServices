@@ -1,0 +1,124 @@
+@import '~styles/variables';
+
+// layout of DIVs with borders that make it look like a table;
+// not using an actual TABLE because it is not tablular data, just visual;
+.nsc-table {
+  // class intended for a table with just a single row (total cost);
+  &--total {
+    border-top: 1px solid $color-gray-medium;
+    background: rgba($color-green, 0.15);
+
+    // undoo zebra stripes for this table varient;
+    .nsc-table__row:nth-child(odd) {
+      background-color: transparent;
+    }
+  }
+
+  &--no-title {
+    border-top: 1px solid $color-gray-medium;
+  }
+
+  // darker band title of the table;
+  &__title {
+    color: #fff;
+    background: $color-gray-medium;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+
+    // container for the title text;
+    &--content {
+      padding: 10px 20px;
+
+      // if this title also has buttons (Order Review);
+      // adjust the size to account for the buttons;
+      &-buttons {
+        padding: 10px 20px;
+        width: calc(100% - 175px);
+      }
+    }
+
+    // container for action buttons for this table content;
+    &--buttons {
+      padding: 0 20px 0 0;
+      width: 175px;
+      text-align: right;
+      font-weight: 400;
+
+      a {
+        color: #fff;
+        cursor: pointer;
+        opacity: 0.75;
+        display: inline-flex;
+        align-items: center;
+
+        &:hover {
+          opacity: 1;
+
+          span {
+            text-decoration: underline;
+          }
+        }
+
+        &:focus {
+          outline-color: #fff;
+        }
+
+        .mat-icon {
+          margin-right: 5px;
+        }
+
+        + a {
+          margin-left: 10px;
+        }
+      }
+
+      .mat-icon {
+        height: 16px;
+        width: 16px;
+        font-size: 16px;
+      }
+    }
+  }
+
+  // TR;
+  &__row {
+    border-bottom: 1px solid $color-gray-medium;
+    display: flex;
+
+    // zebra stripes;
+    &:nth-child(odd) {
+      background-color: $color-gray-bg-medium;
+    }
+  }
+
+  // TD;
+  &__col {
+    padding: 10px 20px;
+
+    // undo the default padding for form fields (it's too much spacing);
+    &--form-field {
+      padding: 10px 20px 0; // assuming no hint, if a hint is used, you'll need another BEM modifier;
+    }
+
+    // text content;
+    &--label {
+      width: calc(100% - 110px);
+    }
+
+    // number content;
+    // vetically and right align content (content is numbers/currency);
+    &--value {
+      width: 110px;
+      border-left: 1px solid $color-gray-medium;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+    }
+
+    // last row total, highlight this value;
+    &--total {
+      color: $color-green;
+    }
+  }
+}

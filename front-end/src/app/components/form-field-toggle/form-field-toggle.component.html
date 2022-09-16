@@ -1,0 +1,31 @@
+<div class="nsc-form-field-toggle">
+  <div class="nsc-form-field-toggle__label">
+    <div class="mat-body-2 mat-hint">{{ label }}</div>
+    <div class="mat-caption mat-hint">{{ note }}</div>
+  </div>
+  <div class="nsc-form-field-toggle__actions">
+    <button
+      mat-button
+      class="nsc-button"
+      type="button"
+      [class.selected]="group.controls[controlName].value === values.yes"
+      [disabled]="disabled"
+      (click)="changeValue(values.yes)">Yes</button>
+    <nsc-spacer horizontal="true"></nsc-spacer>
+    <button
+      mat-button
+      class="nsc-button"
+      type="button"
+      [class.selected]="group.controls[controlName].value === values.no"
+      [disabled]="disabled"
+      (click)="changeValue(values.no)">No</button>
+  </div>
+  <div class="nsc-form-field-toggle__help" *ngIf="help">
+    <mat-icon
+      role="button"
+      tabindex="0"
+      (click)="openDialog()"
+      (keyup.enter)="openDialog()"
+      (keyup.space)="openDialog()">info</mat-icon>
+  </div>
+</div>

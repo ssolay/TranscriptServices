@@ -1,0 +1,56 @@
+@import '~breakpoint-sass/stylesheets/breakpoint';
+@import '~styles/variables';
+
+// container for action buttons for each form;
+// too many !importants are needed to override material design defaults;
+.nsc-form-actions {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  // stack the buttons for mobile;
+  // but on desktop, lay them out in a row;
+  @include breakpoint($breakpoint-md) {
+    flex-direction: row;
+  }
+
+  // only used on desktop rendering;
+  .nsc-spacer {
+    display: block !important;
+  }
+
+  &__button {
+    padding: 7px !important;
+    display: block !important;
+    margin: 0 auto !important;
+    min-width: 190px !important;
+
+    @include breakpoint($breakpoint-md) {
+      margin: 0 !important;
+    }
+
+    .mat-icon {
+      font-size: 18px;
+      height: 20px;
+      width: 18px;
+    }
+  }
+
+  // at desktop, stop stacking the buttons and display them inline;
+  @include breakpoint($breakpoint-lg) {
+    &__button {
+      padding: 4px 36px !important;
+      display: inline-block !important;
+      margin: 0 !important;
+      min-width: auto !important;
+
+      &--previous {
+        padding: 4px 36px 4px 26px !important;
+      }
+
+      &--next {
+        padding: 4px 26px 4px 36px !important;
+      }
+    }
+  }
+}

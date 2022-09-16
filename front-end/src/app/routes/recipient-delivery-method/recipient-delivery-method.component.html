@@ -1,0 +1,226 @@
+<form [formGroup]="formGroup" novalidate>
+  <nsc-card>
+    <nsc-card-title note="All fields required, unless otherwise indicated">Delivery Method</nsc-card-title>
+    <nsc-card-content>
+      <div class="row">
+
+        <div class="col-12 col-md-8 col-lg-6" *ngIf="formGroup.controls['transcriptWhen'].enabled">
+          <nsc-form-field-select
+            controlName="transcriptWhen"
+            placeholder="What transcript do you want sent?"
+            [group]="formGroup"
+            [selectObjects]="values.transcriptWhen"></nsc-form-field-select>
+        </div>
+
+        <div class="col-12"></div>
+
+        <div class="col-12" *ngIf="show.additionalWhenQuestions">
+          <div class="row">
+            <div class="col-12 col-sm-6" *ngIf="formGroup.controls['course1'].enabled">
+              <nsc-form-field-input
+                controlName="course1"
+                maxlength="80"
+                placeholder="Course #1"
+                [group]="formGroup"></nsc-form-field-input>
+            </div>
+            <div class="col-12 col-sm-6" *ngIf="formGroup.controls['course2'].enabled">
+              <nsc-form-field-input
+                controlName="course2"
+                maxlength="80"
+                placeholder="Course #2"
+                [group]="formGroup"
+                [required]="false"></nsc-form-field-input>
+            </div>
+
+            <div class="col-12">
+              <div class="row">
+                <div class="col-12" *ngIf="show.labelForG">
+                  <div class="mat-body-2 mat-hint">Will Be Posted:</div>
+                </div>
+                <div class="col-12" *ngIf="show.labelForD">
+                  <div class="mat-body-2 mat-hint">Degree Will Be Awarded On:</div>
+                </div>
+                <div class="col-12 col-sm-6" *ngIf="formGroup.controls['term'].enabled">
+                  <nsc-form-field-input
+                    controlName="term"
+                    maxlength="10"
+                    placeholder="Term"
+                    [group]="formGroup"
+                    [required]="content.requireTerm"></nsc-form-field-input>
+                </div>
+                <div class="col-12 col-sm-6" *ngIf="formGroup.controls['year'].enabled">
+                  <nsc-form-field-input
+                    controlName="year"
+                    hint="YYYY"
+                    maxlength="4"
+                    placeholder="Year"
+                    [group]="formGroup"
+                    [mask]="masks.year"
+                    [required]="content.requireYear"></nsc-form-field-input>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-8 col-lg-6" *ngIf="formGroup.controls['degreeTitle'].enabled">
+              <nsc-form-field-input
+                controlName="degreeTitle"
+                maxlength="80"
+                placeholder="Degree Title"
+                [group]="formGroup"
+                [required]="content.requireDegree"></nsc-form-field-input>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-8 col-lg-6" *ngIf="formGroup.controls['transcriptType'].enabled">
+          <nsc-form-field-select
+            controlName="transcriptType"
+            placeholder="What type of transcript do you want?"
+            [group]="formGroup"
+            [selectObjects]="values.transcriptTypes"></nsc-form-field-select>
+        </div>
+
+        <div class="col-12"></div>
+
+        <div class="col-12 col-md-8 col-lg-6" *ngIf="formGroup.controls['transcriptPurpose'].enabled">
+          <nsc-form-field-select
+            controlName="transcriptPurpose"
+            placeholder="What is the purpose of your transcript?"
+            [group]="formGroup"
+            [selectObjects]="values.transcriptPurposes"></nsc-form-field-select>
+        </div>
+      </div>
+    </nsc-card-content>
+  </nsc-card>
+
+  <nsc-spacer size="md"></nsc-spacer>
+
+  <nsc-card>
+    <nsc-card-title>Delivery Information</nsc-card-title>
+    <nsc-card-content>
+      <div class="row">
+        <div class="col-12" *ngIf="formGroup.controls['processingMethod'].enabled">
+          <div class="mat-typography">
+            Please indicate if you would like standard or rush processing. For your school’s definition of their processing and delivery option(s), please read the specific delivery text below.
+          </div>
+          <nsc-spacer size="sm"></nsc-spacer>
+        </div>
+
+        <div class="col-12 col-md-8 col-lg-6" *ngIf="formGroup.controls['processingMethod'].enabled">
+          <nsc-form-field-select
+            controlName="processingMethod"
+            placeholder="Processing Method"
+            [group]="formGroup"
+            [selectObjects]="values.processingMethods"></nsc-form-field-select>
+        </div>
+
+        <div class="col-12"></div>
+
+        <div class="col-12 col-md-8 col-lg-6">
+          <nsc-form-field-select
+            controlName="deliveryMethod"
+            placeholder="Transcript Delivery Method"
+            [group]="formGroup"
+            [selectObjects]="values.deliveryMethods"></nsc-form-field-select>
+        </div>
+
+        <div class="col-12"></div>
+
+        <div class="col-12 col-md-8 col-lg-6" *ngIf="formGroup.controls['deliveryMethod'].value">
+          <nsc-form-field-select
+            controlName="howMany"
+            placeholder="How many copies do you want?"
+            [group]="formGroup"
+            [selectObjects]="values.howMany"></nsc-form-field-select>
+        </div>
+
+        <div class="col-12"></div>
+
+        <div class="col-12 col-md-8 col-lg-6" *ngIf="formGroup.controls['specialInstructions'].enabled">
+          <mat-form-field>
+            <textarea
+              matInput
+              matTextareaAutosize
+              formControlName="specialInstructions"
+              maxlength="255"
+              placeholder="Special Instructions"></textarea>
+          </mat-form-field>
+        </div>
+
+        <div class="col-12" *ngIf="formGroup.controls['deliveryMethod'].value">
+          <span class="mat-typography">
+            <strong>Terms and Conditions:</strong><br>
+            {{ content.deliveryMethodHelpText }}
+          </span>
+        </div>
+
+        <div class="col-12" *ngIf="formGroup.controls['deliveryMethod'].value">
+          <nsc-spacer size="md"></nsc-spacer>
+          <nsc-form-field-toggle
+            controlName="acceptTerms"
+            label="I have read and accept the terms and conditions for the delivery method of {{ convertDeliveryMethod.get(content.deliveryMethodDisplay) }}?"
+            note="Acceptance to the Terms and Conditions is required."
+            [group]="formGroup"></nsc-form-field-toggle>
+        </div>
+      </div>
+    </nsc-card-content>
+  </nsc-card>
+
+  <nsc-spacer size="md" *ngIf="content.allowUploads"></nsc-spacer>
+
+  <nsc-card *ngIf="content.allowUploads">
+    <nsc-card-title note="(optional)">Uploads &amp; Attachments</nsc-card-title>
+    <nsc-card-content>
+      <div class="mat-subheading-1">Do you want to send additional documents with your transcript?</div>
+      <nsc-form-field-files
+        [url]="'https://evening-anchorage-3159.herokuapp.com/api/'"
+        [allowedFileTypes]="content.allowedFileTypes"
+        [maxFileCount]="content.attachmentCount">
+      </nsc-form-field-files>
+    </nsc-card-content>
+  </nsc-card>
+
+  <div *ngIf="formGroup.controls['deliveryMethod'].value">
+    <nsc-spacer size="md"></nsc-spacer>
+
+    <nsc-recipient-delivery-method-fees
+      [deliveryMethod]="formGroup.controls['deliveryMethod'].value"
+      [quantity]="formGroup.controls['howMany'].value"
+      [transcriptType]="formGroup.controls['transcriptType'].value"
+      (totalFeesUpdated)="setTotalFees($event)"></nsc-recipient-delivery-method-fees>
+  </div>
+
+  <nsc-spacer size="md"></nsc-spacer>
+
+  <div class="nsc-form-actions">
+    <button
+      mat-raised-button
+      class="nsc-form-actions__button nsc-form-actions__button--previous"
+      color="primary"
+      type="button"
+      (click)="previous()"><mat-icon aria-hidden="true">chevron_left</mat-icon> Previous</button>
+    <nsc-spacer horizontal="true" size="md"></nsc-spacer>
+    <button
+      mat-raised-button
+      class="nsc-form-actions__button"
+      color="accent"
+      type="button"
+      (click)="cancel()">Cancel Order</button>
+    <nsc-spacer horizontal="true" size="md"></nsc-spacer>
+    <button
+      mat-raised-button
+      class="nsc-form-actions__button nsc-form-actions__button--next"
+      color="primary"
+      type="button"
+      [disabled]="!(formGroup.valid === true && formGroup.controls['acceptTerms'].value === values.yes)"
+      (click)="continue()">Continue <mat-icon aria-hidden="true">chevron_right</mat-icon></button>
+  </div>
+</form>
+
+<!-- <nsc-spacer size="md"></nsc-spacer>
+<nsc-card>
+  <nsc-card-title note="development mode only">Form Data Model</nsc-card-title>
+  <nsc-card-content>
+    <textarea class="json">{{ formGroup.value | json }}</textarea>
+  </nsc-card-content>
+</nsc-card> -->

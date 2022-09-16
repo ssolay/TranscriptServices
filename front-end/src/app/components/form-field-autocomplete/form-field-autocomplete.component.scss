@@ -1,0 +1,14 @@
+.nsc-form-field-autocomplete {
+  position: relative;
+
+  .mat-card {
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    padding: 0;
+    z-index: 1;
+    max-height: 256px;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+}

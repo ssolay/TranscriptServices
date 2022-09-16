@@ -1,0 +1,23 @@
+.nsc-spacer {
+  height: 10px;
+  width: 10px;
+
+  &--sm {
+    height: 20px;
+    width: 20px;
+  }
+
+  &--md {
+    height: 30px;
+    width: 30px;
+  }
+
+  &--lg {
+    height: 40px;
+    width: 40px;
+  }
+
+  &--horizontal {
+    display: inline-block;
+  }
+}

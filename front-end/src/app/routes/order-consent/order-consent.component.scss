@@ -1,0 +1,23 @@
+@import '~styles/variables';
+
+// increase the size of the icons;
+.nsc-icon--large {
+  font-size: 24px;
+  height: 24px;
+  width: 24px;
+}
+
+// vertically align the content next to the icon;
+.nsc-icon__align {
+  padding-top: 2px;
+}
+
+#signature {
+  border: 1px solid $color-gray-bg-dark;
+  overflow: hidden;
+  height: 160px;
+  width: 100%;
+  border-radius: 5px;
+  margin: 0 0 12px;
+  -ms-touch-action: none;
+}

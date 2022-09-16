@@ -1,0 +1,164 @@
+<form [formGroup]="formGroup" novalidate>
+  <nsc-card>
+    <nsc-card-title note="All fields required, unless otherwise indicated">Payment Details</nsc-card-title>
+    <nsc-card-content>
+      <div class="row">
+        <div class="col-12">
+          <span class="mat-body-2 mat-hint">Accepted Credit Cards:</span><br />
+          <img class="cc-icon" src="/assets/credit-card-logo--visa.svg" alt="Visa">
+          <img class="cc-icon" src="/assets/credit-card-logo--mastercard.svg" alt="Mastercard">
+          <img class="cc-icon" src="/assets/credit-card-logo--amex.svg" alt="American Express">
+          <img class="cc-icon" src="/assets/credit-card-logo--discover.svg" alt="Discover">
+
+          <nsc-spacer></nsc-spacer>
+        </div>
+
+        <div class="col-12 col-md-4">
+          <nsc-form-field-input
+            autocomplete="cc-name"
+            controlName="name"
+            maxlength="30"
+            placeholder="Cardholder Name"
+            [group]="formGroup"></nsc-form-field-input>
+        </div>
+        <div class="col-12 col-md-4">
+          <nsc-form-field-input
+            autocomplete="cc-number"
+            controlName="creditCardNumber"
+            maxlength="19"
+            placeholder="Card Number"
+            [group]="formGroup"></nsc-form-field-input>
+        </div>
+        <div class="col-6 col-md-4">
+          <nsc-form-field-input
+            autocomplete="cc-csc"
+            controlName="securityCode"
+            maxlength="4"
+            placeholder="Security Code"
+            [group]="formGroup"
+            [mask]="masks.securityCode"></nsc-form-field-input>
+        </div>
+
+        <div class="col-12">
+          <div class="mat-body-2 mat-hint">Expiration Date</div>
+        </div>
+        <div class="col-6 col-md-4">
+          <nsc-form-field-select
+            controlName="expirationMonth"
+            placeholder="Month"
+            [group]="formGroup"
+            [selectObjects]="values.creditCardMonths"></nsc-form-field-select>
+        </div>
+        <div class="col-6 col-md-4">
+          <nsc-form-field-select
+            controlName="expirationYear"
+            placeholder="Year"
+            [group]="formGroup"
+            [selectObjects]="values.creditCardYears"></nsc-form-field-select>
+        </div>
+        <div class="col-12 col-md-4">
+        </div>
+
+        <div class="col-12 col-md-8">
+          <nsc-form-field-toggle
+            controlName="useContactInfo"
+            label="Do you want to use your contact address as your billing address?"
+            [group]="formGroup"></nsc-form-field-toggle>
+        </div>
+
+        <div class="col-12 col-md-8">
+          <nsc-form-field-input
+            autocomplete="shipping address-line1"
+            controlName="addressLine1"
+            hint="Street number and name or PO Box"
+            maxlength="30"
+            placeholder="Address 1"
+            [group]="formGroup"></nsc-form-field-input>
+        </div>
+
+        <div class="col-12 col-md-8">
+          <nsc-form-field-input
+            autocomplete="shipping address-line2"
+            controlName="addressLine2"
+            hint="Building, campus box, floor, apt, suite"
+            maxlength="30"
+            placeholder="Address 2"
+            [group]="formGroup"
+            [required]="false"></nsc-form-field-input>
+        </div>
+        <div class="col-12 col-md-4">
+        </div>
+
+        <div class="col-12 col-md-4">
+          <nsc-form-field-input
+            autocomplete="shipping postal-code"
+            controlName="zip"
+            hint="{{ content.hintZip }}"
+            maxlength="15"
+            placeholder="Zip/Postal Code"
+            [group]="formGroup"></nsc-form-field-input>
+        </div>
+        <div class="col-12 col-md-4">
+          <nsc-form-field-input
+            autocomplete="shipping address-level2"
+            controlName="city"
+            maxlength="30"
+            placeholder="City"
+            [group]="formGroup"></nsc-form-field-input>
+        </div>
+        <div class="col-12 col-md-4">
+        </div>
+
+        <div class="col-6 col-md-4">
+          <nsc-form-field-select-optgroup
+            controlName="state"
+            placeholder="{{ content.labelState }}"
+            [group]="formGroup"
+            [selectObjects]="values.states$.value"></nsc-form-field-select-optgroup>
+        </div>
+        <div class="col-6 col-md-4">
+          <nsc-form-field-select
+            controlName="country"
+            placeholder="Country"
+            [group]="formGroup"
+            [selectObjects]="values.countries$.value"></nsc-form-field-select>
+        </div>
+      </div>
+    </nsc-card-content>
+  </nsc-card>
+
+  <nsc-spacer size="md"></nsc-spacer>
+
+  <div class="mat-typography" style="text-align: center;">
+    <p class="mat-subheading-2">
+      Total Fees for Order: {{ content.totalFees | currency }}
+    </p>
+  </div>
+
+  <nsc-spacer size="md"></nsc-spacer>
+
+  <div class="nsc-form-actions">
+    <button
+      mat-raised-button
+      class="nsc-form-actions__button"
+      color="accent"
+      type="button"
+      (click)="cancel()">Cancel Order</button>
+    <nsc-spacer horizontal="true" size="md"></nsc-spacer>
+    <button
+      mat-raised-button
+      class="nsc-form-actions__button nsc-form-actions__button--next"
+      color="primary"
+      type="button"
+      [disabled]="!formGroup.valid"
+      (click)="continue()">Submit Order <mat-icon aria-hidden="true">chevron_right</mat-icon></button>
+  </div>
+</form>
+
+<!-- <nsc-spacer size="md"></nsc-spacer>
+<nsc-card>
+  <nsc-card-title note="development mode only">Form Data Model</nsc-card-title>
+  <nsc-card-content>
+    <textarea class="json">{{ formGroup.value | json }}</textarea>
+  </nsc-card-content>
+</nsc-card> -->

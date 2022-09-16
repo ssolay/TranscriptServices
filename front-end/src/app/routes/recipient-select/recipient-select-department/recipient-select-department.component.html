@@ -1,0 +1,70 @@
+<div class="row">
+  <div class="col-12 col-md-8" *ngIf="formGroup.controls['department'].enabled">
+    <nsc-form-field-select
+      controlName="department"
+      placeholder="Department"
+      [group]="formGroup"
+      [selectObjects]="values.departments$.value"></nsc-form-field-select>
+  </div>
+  <div class="col-12 col-md-8 col-lg-4" *ngIf="formGroup.controls['departmentNotInList'].enabled">
+    <nsc-form-field-input
+      controlName="departmentNotInList"
+      maxlength="60"
+      placeholder="{{ content.labelDepartment }}"
+      [group]="formGroup"
+      [required]="content.requireDepartment"></nsc-form-field-input>
+  </div>
+  <div class="col-12 col-md-4" *ngIf="formGroup.controls['lsacAccountNumber'].enabled">
+    <nsc-form-field-input
+      controlName="lsacAccountNumber"
+      hint="Enter LSAC ID 'Lxxxxxxxx'"
+      maxlength="9"
+      placeholder="Enter {{ content.labelLsacAccountNumber }}"
+      [group]="formGroup"
+      [mask]="masks.lsacAccountNumber"></nsc-form-field-input>
+  </div>
+
+  <div class="col-12"></div>
+
+  <div class="col-12 col-md-4" *ngIf="formGroup.controls['aamcAccountNumber'].enabled">
+    <nsc-form-field-input
+      controlName="aamcAccountNumber"
+      hint="(8 digits)"
+      maxlength="8"
+      placeholder="Enter {{ content.labelAamcAccountNumber }}"
+      [group]="formGroup"
+      [mask]="masks.aamcAccountNumber"></nsc-form-field-input>
+  </div>
+  <div class="col-12 col-md-4" *ngIf="formGroup.controls['amcasTranscriptIdNumber'].enabled">
+    <nsc-form-field-input
+      controlName="amcasTranscriptIdNumber"
+      hint="(7 digits)"
+      maxlength="7"
+      placeholder="Enter {{ content.labelAmcasTranscriptIdNumber }}"
+      [group]="formGroup"
+      [mask]="masks.amcasTranscriptIdNumber"></nsc-form-field-input>
+  </div>
+
+  <div class="col-12"></div>
+
+  <div class="col-12 col-md-4" *ngIf="formGroup.controls['casId'].enabled">
+    <div class="row nsc-row--12">
+      <div class="col">
+        <nsc-form-field-input
+          controlName="casId"
+          maxlength="60"
+          placeholder="Enter {{ content.labelCasId }}"
+          [group]="formGroup"></nsc-form-field-input>
+      </div>
+      <div class="col-auto">
+        <br />
+        <mat-icon
+          role="button"
+          tabindex="0"
+          (click)="openDialog()"
+          (keyup.enter)="openDialog()"
+          (keyup.space)="openDialog()">help</mat-icon>
+      </div>
+    </div>
+  </div>
+</div>

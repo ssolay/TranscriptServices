@@ -1,0 +1,70 @@
+<nsc-card>
+  <nsc-card-title>Order #: {{ content.orderId }}</nsc-card-title>
+  <nsc-card-content>
+    <div class="row">
+      <div class="col-12 col-md-6">
+        <div class="mat-typography" style="padding-top: 10px;">
+          <p class="mat-subheading-1">
+            <strong>Requestor Information</strong>
+          </p>
+          <p class="mat-subheading-1">
+            <strong>Current Name: {{ content.requestor.firstName }} {{ content.requestor.middleName }} {{ content.requestor.lastName }}</strong>
+            <span *ngIf="content.requestor.schlFirstName">
+              <br />
+              <strong>Name While Attending School: {{ content.requestor.schlFirstName }} {{ content.requestor.schlMiddleName }} {{ content.requestor.schlLastName }}</strong>
+            </span>
+          </p>
+          <p class="mat-subheading-1">
+            <strong>School:</strong> {{ content.schoolProfile.schlName }}
+          </p>
+          <p class="mat-subheading-1" *ngIf="content.orderDate">
+            {{ content.orderDate }}
+          </p>
+          <div *ngIf="content.attachments.length">
+            <p class="mat-subheading-1">
+              <strong>Documents Attached:</strong>
+            </p>
+            <ul>
+              <li *ngFor="let attachment of content.attachments">{{ attachment }}</li>
+            </ul>
+          </div>
+        </div>
+
+        <nsc-spacer size="lg"></nsc-spacer>
+      </div>
+      <div class="col-12 col-md-6">
+        <div *ngFor="let recipient of content.recipients">
+          <nsc-cart-item
+            [processingFee]="content.schoolProfile.baseOpFee"
+            [recipient]="recipient"></nsc-cart-item>
+          <nsc-spacer size="lg"></nsc-spacer>
+        </div>
+      </div>
+    </div>
+
+    <div class="nsc-table nsc-table--total mat-typography">
+      <div class="nsc-table__row">
+        <div class="nsc-table__col nsc-table__col--label" style="text-align: right;">
+          <strong>Total Fee for Order</strong>
+        </div>
+        <div class="nsc-table__col nsc-table__col--value nsc-table__col--total">
+          <strong>{{ content.totalFees | currency }}</strong>
+        </div>
+      </div>
+    </div>
+
+    <nsc-spacer size="lg"></nsc-spacer>
+
+    <div class="mat-typography">
+      <span *ngIf="content.totalFees">Your credit card will not be charged until transcript(s) are sent. The charge for this transaction will appear on your credit card statement as &ldquo;College Transcript&rdquo;.</span> A copy of this order will be sent to <strong>{{ content.requestor.email }}</strong>.
+    </div>
+  </nsc-card-content>
+</nsc-card>
+
+<nsc-spacer size="md"></nsc-spacer>
+
+<div class="mat-typography" style="text-align: center;">
+  <p class="mat-subheading-2">
+    For security purposes, close your browser.
+  </p>
+</div>

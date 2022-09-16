@@ -1,0 +1,1876 @@
+[{
+  "ficeCode": "00247700",
+  "uiVersion": "2.0",
+  "scProfileId": 2675,
+  "name": "A.T. Still University of Health Sciences"
+}, {
+  "ficeCode": "00134500",
+  "uiVersion": "2.0",
+  "scProfileId": 834,
+  "name": "AdamsState DONOTTOUCH Keyword Automation"
+}, {
+  "ficeCode": "00288500",
+  "uiVersion": "2.0",
+  "scProfileId": 3493,
+  "name": "Albany College of Pharmacy and Health Sciences"
+}, {
+  "ficeCode": "00154400",
+  "uiVersion": "2.0",
+  "scProfileId": 1170,
+  "name": "Albany State University"
+}, {
+  "ficeCode": "00554400",
+  "uiVersion": "2.0",
+  "scProfileId": 2498,
+  "name": "Alexandria Technical and Community College"
+}, {
+  "ficeCode": "00354000",
+  "uiVersion": "2.0",
+  "scProfileId": 4067,
+  "name": "Amarillo College"
+}, {
+  "ficeCode": "00211500",
+  "uiVersion": "2.0",
+  "scProfileId": 2125,
+  "name": "Amherst College"
+}, {
+  "ficeCode": "00233200",
+  "uiVersion": "2.0",
+  "scProfileId": 2526,
+  "name": "Anoka Ramsey Community College"
+}, {
+  "ficeCode": "00195200",
+  "uiVersion": "2.0",
+  "scProfileId": 1879,
+  "name": "Asbury University"
+}, {
+  "ficeCode": "00188100",
+  "uiVersion": "2.0",
+  "scProfileId": 1339,
+  "name": "Ashford University"
+}, {
+  "ficeCode": "00199000",
+  "uiVersion": "2.0",
+  "scProfileId": 1859,
+  "name": "Ashland Community and Technical College (KCTCS)"
+}, {
+  "ficeCode": "00854300",
+  "uiVersion": "2.0",
+  "scProfileId": 1134,
+  "name": "Atlanta Technical College"
+}, {
+  "ficeCode": "00831000",
+  "uiVersion": "2.0",
+  "scProfileId": 280,
+  "name": "Auburn University at Montgomery"
+}, {
+  "ficeCode": "00347800",
+  "uiVersion": "2.0",
+  "scProfileId": 200874,
+  "name": "AUSTIN PEAY STATE UNIVERSITY"
+}, {
+  "ficeCode": "00341800",
+  "uiVersion": "2.0",
+  "scProfileId": 5595,
+  "name": "AUTO - Anderson University"
+}, {
+  "ficeCode": "00301000",
+  "uiVersion": "2.0",
+  "scProfileId": 4656,
+  "name": "AUTO - Antioch University"
+}, {
+  "ficeCode": "00100800",
+  "uiVersion": "2.0",
+  "scProfileId": 226,
+  "name": "AUTO - Athens State University"
+}, {
+  "ficeCode": "00100900",
+  "uiVersion": "2.0",
+  "scProfileId": 329,
+  "name": "AUTO - Auburn University"
+}, {
+  "ficeCode": "00233400",
+  "uiVersion": "2.0",
+  "scProfileId": 2564,
+  "name": "AUTO - Augsburg College - DO NOT CHANGE"
+}, {
+  "ficeCode": "00178600",
+  "uiVersion": "2.0",
+  "scProfileId": 1665,
+  "name": "AUTO - Ball State University"
+}, {
+  "ficeCode": "00383500",
+  "uiVersion": "2.0",
+  "scProfileId": 5258,
+  "name": "AUTO - Beloit College"
+}, {
+  "ficeCode": "00163800",
+  "uiVersion": "2.0",
+  "scProfileId": 1491,
+  "name": "AUTO - Black Hawk College"
+}, {
+  "ficeCode": "00164100",
+  "uiVersion": "2.0",
+  "scProfileId": 1495,
+  "name": "AUTO - Bradley University"
+}, {
+  "ficeCode": "00116400",
+  "uiVersion": "2.0",
+  "scProfileId": 592,
+  "name": "AUTO - Chapman University"
+}, {
+  "ficeCode": "00135000",
+  "uiVersion": "2.0",
+  "scProfileId": 809,
+  "name": "AUTO - Colorado State University"
+}, {
+  "ficeCode": "00135300",
+  "uiVersion": "2.0",
+  "scProfileId": 814,
+  "name": "AUTO - Fort Lewis College"
+}, {
+  "ficeCode": "00326700",
+  "uiVersion": "2.0",
+  "scProfileId": 5220,
+  "name": "AUTO - Geneva College"
+}, {
+  "ficeCode": "00319400",
+  "uiVersion": "2.0",
+  "scProfileId": 4510,
+  "name": "AUTO - George Fox University"
+}, {
+  "ficeCode": "00162000",
+  "uiVersion": "2.0",
+  "scProfileId": 1360,
+  "name": "AUTO - Idaho State University"
+}, {
+  "ficeCode": "00169200",
+  "uiVersion": "2.0",
+  "scProfileId": 1409,
+  "name": "AUTO - Illinois State University"
+}, {
+  "ficeCode": "00273700",
+  "uiVersion": "2.0",
+  "scProfileId": 3518,
+  "name": "AUTO - Iona College"
+}, {
+  "ficeCode": "00575700",
+  "uiVersion": "2.0",
+  "scProfileId": 2501,
+  "name": "AUTO - Lake Superior College"
+}, {
+  "ficeCode": "00248000",
+  "uiVersion": "2.0",
+  "scProfileId": 2677,
+  "name": "AUTO - Lindenwood University"
+}, {
+  "ficeCode": "00371900",
+  "uiVersion": "2.0",
+  "scProfileId": 145,
+  "name": "AUTO - Longwood University"
+}, {
+  "ficeCode": "00123800",
+  "uiVersion": "2.0",
+  "scProfileId": 504,
+  "name": "AUTO - Mills College"
+}, {
+  "ficeCode": "00173300",
+  "uiVersion": "2.0",
+  "scProfileId": 1475,
+  "name": "AUTO - National Louis University"
+}, {
+  "ficeCode": "03957400",
+  "uiVersion": "2.0",
+  "scProfileId": 9563,
+  "name": "AUTO - New College of Florida"
+}, {
+  "ficeCode": "00360400",
+  "uiVersion": "2.0",
+  "scProfileId": 4364,
+  "name": "AUTO - Rice University"
+}, {
+  "ficeCode": "00253400",
+  "uiVersion": "2.0",
+  "scProfileId": 2846,
+  "name": "AUTO - Rocky Mountain College"
+}, {
+  "ficeCode": "00140300",
+  "uiVersion": "2.0",
+  "scProfileId": 890,
+  "name": "AUTO - Sacred Heart University"
+}, {
+  "ficeCode": "00379000",
+  "uiVersion": "2.0",
+  "scProfileId": 24,
+  "name": "AUTO - Seattle University"
+}, {
+  "ficeCode": "00152000",
+  "uiVersion": "2.0",
+  "scProfileId": 1080,
+  "name": "AUTO - Seminole State College of Florida"
+}, {
+  "ficeCode": "00296200",
+  "uiVersion": "2.0",
+  "scProfileId": 2916,
+  "name": "AUTO - Shaw University"
+}, {
+  "ficeCode": "00776400",
+  "uiVersion": "2.0",
+  "scProfileId": 5465,
+  "name": "AUTO - Southeast Technical Institute"
+}, {
+  "ficeCode": "00282100",
+  "uiVersion": "2.0",
+  "scProfileId": 3415,
+  "name": "AUTO - St John Fisher College"
+}, {
+  "ficeCode": "00249500",
+  "uiVersion": "2.0",
+  "scProfileId": 2686,
+  "name": "AUTO - Truman State University"
+}, {
+  "ficeCode": "00131400",
+  "uiVersion": "2.0",
+  "scProfileId": 569,
+  "name": "AUTO - University of California-Irvine"
+}, {
+  "ficeCode": "00132500",
+  "uiVersion": "2.0",
+  "scProfileId": 160,
+  "name": "AUTO - University of San Francisco"
+}, {
+  "ficeCode": "00142600",
+  "uiVersion": "2.0",
+  "scProfileId": 108,
+  "name": "AUTO - Yale University"
+}, {
+  "ficeCode": "00107900",
+  "uiVersion": "2.0",
+  "scProfileId": 418,
+  "name": "AUTO - Yavapai College"
+}, {
+  "ficeCode": "00399600",
+  "uiVersion": "2.0",
+  "scProfileId": 4511,
+  "name": "AUTO - York Technical College"
+}, {
+  "ficeCode": "00160400",
+  "uiVersion": "2.0",
+  "scProfileId": 1151,
+  "name": "AUTO - Young Harris College"
+}, {
+  "ficeCode": "00207702",
+  "uiVersion": "2.0",
+  "scProfileId": 3926,
+  "name": "AUTO -Johns Hopkins Arts, Sciences and Engineering"
+}, {
+  "ficeCode": "00207705",
+  "uiVersion": "2.0",
+  "scProfileId": 3929,
+  "name": "AUTO -Johns Hopkins-Bloomberg School Public Health"
+}, {
+  "ficeCode": "00297600",
+  "uiVersion": "2.0",
+  "scProfileId": 121,
+  "name": "AUTOThe University Of North Carolina At Greensboro"
+}, {
+  "ficeCode": "00244900",
+  "uiVersion": "2.0",
+  "scProfileId": 161,
+  "name": "Avila University"
+}, {
+  "ficeCode": "00301400",
+  "uiVersion": "2.0",
+  "scProfileId": 4193,
+  "name": "Baldwin-Wallace College"
+}, {
+  "ficeCode": "00267000",
+  "uiVersion": "2.0",
+  "scProfileId": 4091,
+  "name": "Baptist Bible College of Pennsylvania"
+}, {
+  "ficeCode": "02242500",
+  "uiVersion": "2.0",
+  "scProfileId": 5932,
+  "name": "Bastyr University"
+}, {
+  "ficeCode": "00239700",
+  "uiVersion": "2.0",
+  "scProfileId": 2800,
+  "name": "Belhaven College"
+}, {
+  "ficeCode": "00376900",
+  "uiVersion": "2.0",
+  "scProfileId": 3750,
+  "name": "Bellevue College"
+}, {
+  "ficeCode": "00291000",
+  "uiVersion": "2.0",
+  "scProfileId": 200962,
+  "name": "BELMONT ABBEY COLLEGE"
+}, {
+  "ficeCode": "01025600",
+  "uiVersion": "2.0",
+  "scProfileId": 1819,
+  "name": "Benedictine College"
+}, {
+  "ficeCode": "00215100",
+  "uiVersion": "2.0",
+  "scProfileId": 201237,
+  "name": "Benjamin Franklin Institute of Technology"
+}, {
+  "ficeCode": "00374500",
+  "uiVersion": "2.0",
+  "scProfileId": 27,
+  "name": "Beta-University of Virginia - SIS Testing"
+}, {
+  "ficeCode": "00146700",
+  "uiVersion": "2.0",
+  "scProfileId": 1033,
+  "name": "Bethune-Cookman University"
+}, {
+  "ficeCode": "00377000",
+  "uiVersion": "2.0",
+  "scProfileId": 3811,
+  "name": "Big Bend Community College"
+}, {
+  "ficeCode": "00199600",
+  "uiVersion": "2.0",
+  "scProfileId": 1855,
+  "name": "Big Sandy Community and Technical College"
+}, {
+  "ficeCode": "00298800",
+  "uiVersion": "2.0",
+  "scProfileId": 3021,
+  "name": "Bismarck State College"
+}, {
+  "ficeCode": "00524400",
+  "uiVersion": "2.0",
+  "scProfileId": 1888,
+  "name": "Bluegrass Community and Technical College"
+}, {
+  "ficeCode": "00155700",
+  "uiVersion": "2.0",
+  "scProfileId": 237,
+  "name": "Brewton-Parker College"
+}, {
+  "ficeCode": "00340100",
+  "uiVersion": "2.0",
+  "scProfileId": 5918,
+  "name": "Brown University"
+}, {
+  "ficeCode": "00340200",
+  "uiVersion": "2.0",
+  "scProfileId": 4797,
+  "name": "BRYANT UNIVERSITY"
+}, {
+  "ficeCode": "00323800",
+  "uiVersion": "2.0",
+  "scProfileId": 4109,
+  "name": "Bucknell University"
+}, {
+  "ficeCode": "00114400",
+  "uiVersion": "2.0",
+  "scProfileId": 200431,
+  "name": "CALIFORNIA STATE POLYTECHNIC UNIVERSITY, POMONA"
+}, {
+  "ficeCode": "00114100",
+  "uiVersion": "2.0",
+  "scProfileId": 612,
+  "name": "California State University-Dominguez Hills"
+}, {
+  "ficeCode": "00113700",
+  "uiVersion": "2.0",
+  "scProfileId": 526,
+  "name": "California State University-Fullerton - SIS"
+}, {
+  "ficeCode": "03260300",
+  "uiVersion": "2.0",
+  "scProfileId": 4294,
+  "name": "California State University-Monterey Bay"
+}, {
+  "ficeCode": "00115700",
+  "uiVersion": "2.0",
+  "scProfileId": 597,
+  "name": "California State University-Stanislaus"
+}, {
+  "ficeCode": "00268100",
+  "uiVersion": "2.0",
+  "scProfileId": 3464,
+  "name": "Canisius College"
+}, {
+  "ficeCode": "00726500",
+  "uiVersion": "2.0",
+  "scProfileId": 1432,
+  "name": "Carl Sandburg College"
+}, {
+  "ficeCode": "00324200",
+  "uiVersion": "2.0",
+  "scProfileId": 3657,
+  "name": "Carnegie Mellon University"
+}, {
+  "ficeCode": "00252600",
+  "uiVersion": "2.0",
+  "scProfileId": 2839,
+  "name": "Carroll College"
+}, {
+  "ficeCode": "03483500",
+  "uiVersion": "2.0",
+  "scProfileId": 6502,
+  "name": "Cascadia Community College"
+}, {
+  "ficeCode": "00321900",
+  "uiVersion": "2.0",
+  "scProfileId": 4967,
+  "name": "Celerity Test School1_ Southern Oregon University"
+}, {
+  "ficeCode": "00728300",
+  "uiVersion": "2.0",
+  "scProfileId": 427,
+  "name": "Central Arizona College"
+}, {
+  "ficeCode": "00185000",
+  "uiVersion": "2.0",
+  "scProfileId": 1269,
+  "name": "Central College"
+}, {
+  "ficeCode": "00489000",
+  "uiVersion": "2.0",
+  "scProfileId": 4518,
+  "name": "Central Pennsylvania College"
+}, {
+  "ficeCode": "00377100",
+  "uiVersion": "2.0",
+  "scProfileId": 4145,
+  "name": "Central Washington University"
+}, {
+  "ficeCode": "01054600",
+  "uiVersion": "2.0",
+  "scProfileId": 2605,
+  "name": "Century Community & Technical College"
+}, {
+  "ficeCode": "00169400",
+  "uiVersion": "2.0",
+  "scProfileId": 1400,
+  "name": "Chicago State University"
+}, {
+  "ficeCode": "00291600",
+  "uiVersion": "2.0",
+  "scProfileId": 2903,
+  "name": "Chowan College"
+}, {
+  "ficeCode": "01302200",
+  "uiVersion": "2.0",
+  "scProfileId": 5366,
+  "name": "City University of Seattle"
+}, {
+  "ficeCode": "00487800",
+  "uiVersion": "2.0",
+  "scProfileId": 4981,
+  "name": "Clackamas Community College"
+}, {
+  "ficeCode": "00254000",
+  "uiVersion": "2.0",
+  "scProfileId": 3036,
+  "name": "College of Saint Mary"
+}, {
+  "ficeCode": "00161900",
+  "uiVersion": "2.0",
+  "scProfileId": 1361,
+  "name": "College of Southern Idaho"
+}, {
+  "ficeCode": "01036200",
+  "uiVersion": "2.0",
+  "scProfileId": 3290,
+  "name": "College of Southern Nevada"
+}, {
+  "ficeCode": "00250000",
+  "uiVersion": "2.0",
+  "scProfileId": 2723,
+  "name": "College of the Ozarks"
+}, {
+  "ficeCode": "00166500",
+  "uiVersion": "2.0",
+  "scProfileId": 1382,
+  "name": "Columbia College Chicago"
+}, {
+  "ficeCode": "00348300",
+  "uiVersion": "2.0",
+  "scProfileId": 200882,
+  "name": "COLUMBIA STATE COMMUNITY COLLEGE"
+}, {
+  "ficeCode": "00303900",
+  "uiVersion": "2.0",
+  "scProfileId": 5045,
+  "name": "Columbus College of Art & Design"
+}, {
+  "ficeCode": "00324900",
+  "uiVersion": "2.0",
+  "scProfileId": 90,
+  "name": "Community College of Philadelphia"
+}, {
+  "ficeCode": "00234600",
+  "uiVersion": "2.0",
+  "scProfileId": 2575,
+  "name": "Concordia College Moorhead (MN)"
+}, {
+  "ficeCode": "00185600",
+  "uiVersion": "2.0",
+  "scProfileId": 1279,
+  "name": "Cornell College"
+}, {
+  "ficeCode": "00214300",
+  "uiVersion": "2.0",
+  "scProfileId": 2013,
+  "name": "Curry College"
+}, {
+  "ficeCode": "00142800",
+  "uiVersion": "2.0",
+  "scProfileId": 999,
+  "name": "Delaware State University"
+}, {
+  "ficeCode": "00298900",
+  "uiVersion": "2.0",
+  "scProfileId": 3001,
+  "name": "Dickinson State University"
+}, {
+  "ficeCode": "00200400",
+  "uiVersion": "2.0",
+  "scProfileId": 1972,
+  "name": "Dillard University"
+}, {
+  "ficeCode": "00367100",
+  "uiVersion": "2.0",
+  "scProfileId": 3683,
+  "name": "Dixie State College of Utah"
+}, {
+  "ficeCode": "00119600",
+  "uiVersion": "2.0",
+  "scProfileId": 630,
+  "name": "Dominican University of California"
+}, {
+  "ficeCode": "00325600",
+  "uiVersion": "2.0",
+  "scProfileId": 91,
+  "name": "Drexel University"
+}, {
+  "ficeCode": "00292300",
+  "uiVersion": "2.0",
+  "scProfileId": 2908,
+  "name": "East Carolina University"
+}, {
+  "ficeCode": "00240400",
+  "uiVersion": "2.0",
+  "scProfileId": 2811,
+  "name": "East Central Community College"
+}, {
+  "ficeCode": "00348700",
+  "uiVersion": "2.0",
+  "scProfileId": 3724,
+  "name": "East Tennessee State University"
+}, {
+  "ficeCode": "02168600",
+  "uiVersion": "2.0",
+  "scProfileId": 1600,
+  "name": "East West University"
+}, {
+  "ficeCode": "00225900",
+  "uiVersion": "2.0",
+  "scProfileId": 2396,
+  "name": "Eastern Michigan University"
+}, {
+  "ficeCode": "01033800",
+  "uiVersion": "2.0",
+  "scProfileId": 3939,
+  "name": "Eastern Virginia Medical School"
+}, {
+  "ficeCode": "01275000",
+  "uiVersion": "2.0",
+  "scProfileId": 5280,
+  "name": "Edison State Community College"
+}, {
+  "ficeCode": "00147800",
+  "uiVersion": "2.0",
+  "scProfileId": 200673,
+  "name": "Edward Waters College"
+}, {
+  "ficeCode": "00199100",
+  "uiVersion": "2.0",
+  "scProfileId": 1858,
+  "name": "Elizabethtown Community College"
+}, {
+  "ficeCode": "00377600",
+  "uiVersion": "2.0",
+  "scProfileId": 4517,
+  "name": "Everett Community College"
+}, {
+  "ficeCode": "00138500",
+  "uiVersion": "2.0",
+  "scProfileId": 912,
+  "name": "Fairfield University"
+}, {
+  "ficeCode": "00226000",
+  "uiVersion": "2.0",
+  "scProfileId": 2405,
+  "name": "Ferris State University"
+}, {
+  "ficeCode": "00215000",
+  "uiVersion": "2.0",
+  "scProfileId": 201236,
+  "name": "FISHER COLLEGE"
+}, {
+  "ficeCode": "00218400",
+  "uiVersion": "2.0",
+  "scProfileId": 2159,
+  "name": "Fitchburg State College"
+}, {
+  "ficeCode": "00191600",
+  "uiVersion": "2.0",
+  "scProfileId": 1807,
+  "name": "Fort Scott Community College"
+}, {
+  "ficeCode": "00349200",
+  "uiVersion": "2.0",
+  "scProfileId": 177,
+  "name": "Freed-Hardeman University"
+}, {
+  "ficeCode": "00527300",
+  "uiVersion": "2.0",
+  "scProfileId": 1872,
+  "name": "Gateway Community and Technical College (KCTCS)"
+}, {
+  "ficeCode": "00196400",
+  "uiVersion": "2.0",
+  "scProfileId": 1847,
+  "name": "Georgetown College"
+}, {
+  "ficeCode": "00120500",
+  "uiVersion": "2.0",
+  "scProfileId": 636,
+  "name": "Golden Gate University"
+}, {
+  "ficeCode": "00377800",
+  "uiVersion": "2.0",
+  "scProfileId": 188,
+  "name": "Gonzaga University"
+}, {
+  "ficeCode": "00914500",
+  "uiVersion": "2.0",
+  "scProfileId": 1562,
+  "name": "Governors State University"
+}, {
+  "ficeCode": "00186600",
+  "uiVersion": "2.0",
+  "scProfileId": 1331,
+  "name": "Graceland University"
+}, {
+  "ficeCode": "00168400",
+  "uiVersion": "2.0",
+  "scProfileId": 1408,
+  "name": "Greenville College"
+}, {
+  "ficeCode": "00186800",
+  "uiVersion": "2.0",
+  "scProfileId": 1329,
+  "name": "Grinnell College"
+}, {
+  "ficeCode": "00326900",
+  "uiVersion": "2.0",
+  "scProfileId": 5026,
+  "name": "Grove City College"
+}, {
+  "ficeCode": "00293100",
+  "uiVersion": "2.0",
+  "scProfileId": 2913,
+  "name": "Guilford College"
+}, {
+  "ficeCode": "00371400",
+  "uiVersion": "2.0",
+  "scProfileId": 4172,
+  "name": "Hampton University"
+}, {
+  "ficeCode": "00272900",
+  "uiVersion": "2.0",
+  "scProfileId": 3502,
+  "name": "Hartwick College"
+}, {
+  "ficeCode": "00215506",
+  "uiVersion": "2.0",
+  "scProfileId": 6000,
+  "name": "Harvard Divinity School"
+}, {
+  "ficeCode": "00215508",
+  "uiVersion": "2.0",
+  "scProfileId": 6002,
+  "name": "HARVARD UNIVERSITY FACTULTY OF ARTS & SCIENCES"
+}, {
+  "ficeCode": "00215509",
+  "uiVersion": "2.0",
+  "scProfileId": 6003,
+  "name": "Harvard-Kennedy School of Government"
+}, {
+  "ficeCode": "00215510",
+  "uiVersion": "2.0",
+  "scProfileId": 6004,
+  "name": "Harvard-Law School"
+}, {
+  "ficeCode": "00696200",
+  "uiVersion": "2.0",
+  "scProfileId": 1884,
+  "name": "Hazard Community and Technical College"
+}, {
+  "ficeCode": "02279500",
+  "uiVersion": "2.0",
+  "scProfileId": 1232,
+  "name": "Heart of Georgia Technical College"
+}, {
+  "ficeCode": "00199300",
+  "uiVersion": "2.0",
+  "scProfileId": 1857,
+  "name": "Henderson Community College"
+}, {
+  "ficeCode": "00109800",
+  "uiVersion": "2.0",
+  "scProfileId": 201023,
+  "name": "HENDERSON STATE UNIVERSITY"
+}, {
+  "ficeCode": "00235500",
+  "uiVersion": "2.0",
+  "scProfileId": 2544,
+  "name": "Hibbing Community College"
+}, {
+  "ficeCode": "00378100",
+  "uiVersion": "2.0",
+  "scProfileId": 3718,
+  "name": "Highline Community College"
+}, {
+  "ficeCode": "00371500",
+  "uiVersion": "2.0",
+  "scProfileId": 4292,
+  "name": "Hollins University"
+}, {
+  "ficeCode": "20001682",
+  "uiVersion": "2.0",
+  "scProfileId": 201311,
+  "name": "Hometown University"
+}, {
+  "ficeCode": "00273400",
+  "uiVersion": "2.0",
+  "scProfileId": 3505,
+  "name": "Houghton College"
+}, {
+  "ficeCode": "00817500",
+  "uiVersion": "2.0",
+  "scProfileId": 2249,
+  "name": "Howard Community College"
+}, {
+  "ficeCode": "00240900",
+  "uiVersion": "2.0",
+  "scProfileId": 2805,
+  "name": "Itawamba Community College"
+}, {
+  "ficeCode": "00991700",
+  "uiVersion": "2.0",
+  "scProfileId": 1729,
+  "name": "Ivy Tech Community Colleges - SIS"
+}, {
+  "ficeCode": "00102000",
+  "uiVersion": "2.0",
+  "scProfileId": 287,
+  "name": "Jacksonville State University"
+}, {
+  "ficeCode": "00299000",
+  "uiVersion": "2.0",
+  "scProfileId": 3020,
+  "name": "Jamestown College"
+}, {
+  "ficeCode": "00696100",
+  "uiVersion": "2.0",
+  "scProfileId": 1863,
+  "name": "Jefferson Community and Technical College"
+}, {
+  "ficeCode": "00207703",
+  "uiVersion": "2.0",
+  "scProfileId": 3927,
+  "name": "Johns Hopkins Carey Business Sch & School of Ed"
+}, {
+  "ficeCode": "00207701",
+  "uiVersion": "2.0",
+  "scProfileId": 3925,
+  "name": "Johns Hopkins University-SAIS"
+}, {
+  "ficeCode": "00293600",
+  "uiVersion": "2.0",
+  "scProfileId": 2864,
+  "name": "Johnson C. Smith University"
+}, {
+  "ficeCode": "00227500",
+  "uiVersion": "2.0",
+  "scProfileId": 2447,
+  "name": "Kalamazoo College"
+}, {
+  "ficeCode": "00769000",
+  "uiVersion": "2.0",
+  "scProfileId": 1468,
+  "name": "Kankakee Community College"
+}, {
+  "ficeCode": "00259000",
+  "uiVersion": "2.0",
+  "scProfileId": 191,
+  "name": "Keene State College"
+}, {
+  "ficeCode": "00196900",
+  "uiVersion": "2.0",
+  "scProfileId": 1886,
+  "name": "Kentucky Wesleyan College"
+}, {
+  "ficeCode": "00274400",
+  "uiVersion": "2.0",
+  "scProfileId": 3511,
+  "name": "Keuka College"
+}, {
+  "ficeCode": "00328200",
+  "uiVersion": "2.0",
+  "scProfileId": 4469,
+  "name": "King's College"
+}, {
+  "ficeCode": "00398700",
+  "uiVersion": "2.0",
+  "scProfileId": 4629,
+  "name": "La Roche College"
+}, {
+  "ficeCode": "00328700",
+  "uiVersion": "2.0",
+  "scProfileId": 4150,
+  "name": "La Salle University"
+}, {
+  "ficeCode": "00299100",
+  "uiVersion": "2.0",
+  "scProfileId": 3019,
+  "name": "Lake Region State College"
+}, {
+  "ficeCode": "00537300",
+  "uiVersion": "2.0",
+  "scProfileId": 4528,
+  "name": "Lake Washington Technical College"
+}, {
+  "ficeCode": "00319600",
+  "uiVersion": "2.0",
+  "scProfileId": 4475,
+  "name": "Lane Community College"
+}, {
+  "ficeCode": "00925900",
+  "uiVersion": "2.0",
+  "scProfileId": 4949,
+  "name": "Laramie County Community College"
+}, {
+  "ficeCode": "00162100",
+  "uiVersion": "2.0",
+  "scProfileId": 1359,
+  "name": "Lewis-Clark State College"
+}, {
+  "ficeCode": "00343600",
+  "uiVersion": "2.0",
+  "scProfileId": 4454,
+  "name": "Limestone College"
+}, {
+  "ficeCode": "00471100",
+  "uiVersion": "2.0",
+  "scProfileId": 2657,
+  "name": "Linn State Technical College"
+}, {
+  "ficeCode": "00693800",
+  "uiVersion": "2.0",
+  "scProfileId": 5345,
+  "name": "Linn-Benton Community College"
+}, {
+  "ficeCode": "01114500",
+  "uiVersion": "2.0",
+  "scProfileId": 4863,
+  "name": "Lone Star College System-SIS"
+}, {
+  "ficeCode": "00122400",
+  "uiVersion": "2.0",
+  "scProfileId": 458,
+  "name": "Los Angeles Harbor College"
+}, {
+  "ficeCode": "00704700",
+  "uiVersion": "2.0",
+  "scProfileId": 467,
+  "name": "Los Angeles Southwest College"
+}, {
+  "ficeCode": "01164900",
+  "uiVersion": "2.0",
+  "scProfileId": 193,
+  "name": "Loyola Marymount University"
+}, {
+  "ficeCode": "00201400",
+  "uiVersion": "2.0",
+  "scProfileId": 1973,
+  "name": "LSU Health Sciences Center"
+}, {
+  "ficeCode": "00329300",
+  "uiVersion": "2.0",
+  "scProfileId": 4212,
+  "name": "Lycoming College"
+}, {
+  "ficeCode": "00171700",
+  "uiVersion": "2.0",
+  "scProfileId": 1449,
+  "name": "Macmurray College"
+}, {
+  "ficeCode": "00890600",
+  "uiVersion": "2.0",
+  "scProfileId": 200682,
+  "name": "Macomb Community College"
+}, {
+  "ficeCode": "00901000",
+  "uiVersion": "2.0",
+  "scProfileId": 1883,
+  "name": "Madisonville Community College"
+}, {
+  "ficeCode": "01167300",
+  "uiVersion": "2.0",
+  "scProfileId": 2345,
+  "name": "Maine College of Art"
+}, {
+  "ficeCode": "00386300",
+  "uiVersion": "2.0",
+  "scProfileId": 4014,
+  "name": "Marquette University"
+}, {
+  "ficeCode": "01047400",
+  "uiVersion": "2.0",
+  "scProfileId": 764,
+  "name": "Marymount College-Palos Verdes"
+}, {
+  "ficeCode": "00696000",
+  "uiVersion": "2.0",
+  "scProfileId": 1864,
+  "name": "Maysville Community and Technical College (KCTCS)"
+}, {
+  "ficeCode": "00299300",
+  "uiVersion": "2.0",
+  "scProfileId": 3017,
+  "name": "Mayville State University"
+}, {
+  "ficeCode": "00294500",
+  "uiVersion": "2.0",
+  "scProfileId": 2874,
+  "name": "Meredith College"
+}, {
+  "ficeCode": "01037400",
+  "uiVersion": "2.0",
+  "scProfileId": 2629,
+  "name": "Metropolitan State University"
+}, {
+  "ficeCode": "00307700",
+  "uiVersion": "2.0",
+  "scProfileId": 79,
+  "name": "Miami University"
+}, {
+  "ficeCode": "00255300",
+  "uiVersion": "2.0",
+  "scProfileId": 3041,
+  "name": "Midland Lutheran College"
+}, {
+  "ficeCode": "00399300",
+  "uiVersion": "2.0",
+  "scProfileId": 5481,
+  "name": "Midlands Technical College"
+}, {
+  "ficeCode": "00399380",
+  "uiVersion": "2.0",
+  "scProfileId": 26401,
+  "name": "Midlands Technical College-Continuing Education"
+}, {
+  "ficeCode": "00236200",
+  "uiVersion": "2.0",
+  "scProfileId": 2561,
+  "name": "Minneapolis Community and Technical College"
+}, {
+  "ficeCode": "00236000",
+  "uiVersion": "2.0",
+  "scProfileId": 2548,
+  "name": "Minnesota State University-Mankato"
+}, {
+  "ficeCode": "00526305",
+  "uiVersion": "2.0",
+  "scProfileId": 4977,
+  "name": "Minnesota West Community and Technical College-W"
+}, {
+  "ficeCode": "00299400",
+  "uiVersion": "2.0",
+  "scProfileId": 3016,
+  "name": "Minot State University"
+}, {
+  "ficeCode": "00324700",
+  "uiVersion": "2.0",
+  "scProfileId": 3759,
+  "name": "Misericordia University"
+}, {
+  "ficeCode": "00242200",
+  "uiVersion": "2.0",
+  "scProfileId": 2795,
+  "name": "Mississippi University for Women"
+}, {
+  "ficeCode": "00253000",
+  "uiVersion": "2.0",
+  "scProfileId": 2850,
+  "name": "Montana State University-Billings"
+}, {
+  "ficeCode": "00253200",
+  "uiVersion": "2.0",
+  "scProfileId": 2855,
+  "name": "Montana State University-Bozeman"
+}, {
+  "ficeCode": "00253100",
+  "uiVersion": "2.0",
+  "scProfileId": 2849,
+  "name": "Montana Tech of The University of Montana"
+}, {
+  "ficeCode": "00158200",
+  "uiVersion": "2.0",
+  "scProfileId": 47,
+  "name": "Morehouse College"
+}, {
+  "ficeCode": "00386900",
+  "uiVersion": "2.0",
+  "scProfileId": 4591,
+  "name": "Mount Mary College"
+}, {
+  "ficeCode": "00188000",
+  "uiVersion": "2.0",
+  "scProfileId": 1338,
+  "name": "Mount Mercy University"
+}, {
+  "ficeCode": "00277800",
+  "uiVersion": "2.0",
+  "scProfileId": 106,
+  "name": "Mount Saint Mary College (NY)"
+}, {
+  "ficeCode": "00124300",
+  "uiVersion": "2.0",
+  "scProfileId": 509,
+  "name": "Mount St Mary's College (CA)"
+}, {
+  "ficeCode": "00320400",
+  "uiVersion": "2.0",
+  "scProfileId": 4492,
+  "name": "Mt. Hood Community College"
+}, {
+  "ficeCode": "02117500",
+  "uiVersion": "2.0",
+  "scProfileId": 852,
+  "name": "Naropa University"
+}, {
+  "ficeCode": "01146000",
+  "uiVersion": "2.0",
+  "scProfileId": 714,
+  "name": "National University - SIS"
+}, {
+  "ficeCode": "00277900",
+  "uiVersion": "2.0",
+  "scProfileId": 3400,
+  "name": "Nazareth College of Rochester"
+}, {
+  "ficeCode": "01009800",
+  "uiVersion": "2.0",
+  "scProfileId": 6383,
+  "name": "Neumont University"
+}, {
+  "ficeCode": "00219400",
+  "uiVersion": "2.0",
+  "scProfileId": 2040,
+  "name": "New England Conservatory of Music"
+}, {
+  "ficeCode": "00278200",
+  "uiVersion": "2.0",
+  "scProfileId": 3397,
+  "name": "New York Institute of Technology"
+}, {
+  "ficeCode": "00278500",
+  "uiVersion": "2.0",
+  "scProfileId": 22,
+  "name": "NEW YORK UNIVERSITY"
+}, {
+  "ficeCode": "00795400",
+  "uiVersion": "2.0",
+  "scProfileId": 2516,
+  "name": "Normandale Community College"
+}, {
+  "ficeCode": "00297200",
+  "uiVersion": "2.0",
+  "scProfileId": 25,
+  "name": "North Carolina State University"
+}, {
+  "ficeCode": "00299600",
+  "uiVersion": "2.0",
+  "scProfileId": 3014,
+  "name": "North Dakota State College of Science"
+}, {
+  "ficeCode": "00299700",
+  "uiVersion": "2.0",
+  "scProfileId": 3013,
+  "name": "North Dakota State University"
+}, {
+  "ficeCode": "00970400",
+  "uiVersion": "2.0",
+  "scProfileId": 3722,
+  "name": "North Seattle Community College"
+}, {
+  "ficeCode": "00108200",
+  "uiVersion": "2.0",
+  "scProfileId": 421,
+  "name": "Northern Arizona University"
+}, {
+  "ficeCode": "00173700",
+  "uiVersion": "2.0",
+  "scProfileId": 1463,
+  "name": "Northern Illinois University"
+}, {
+  "ficeCode": "00369200",
+  "uiVersion": "2.0",
+  "scProfileId": 4307,
+  "name": "Norwich University-Traditional"
+}, {
+  "ficeCode": "00230300",
+  "uiVersion": "2.0",
+  "scProfileId": 2441,
+  "name": "Oakland Community College"
+}, {
+  "ficeCode": "00103300",
+  "uiVersion": "2.0",
+  "scProfileId": 268,
+  "name": "Oakwood University"
+}, {
+  "ficeCode": "03034500",
+  "uiVersion": "2.0",
+  "scProfileId": 4474,
+  "name": "Owensboro Community and Technical College"
+}, {
+  "ficeCode": "00378500",
+  "uiVersion": "2.0",
+  "scProfileId": 33,
+  "name": "Pacific Lutheran University"
+}, {
+  "ficeCode": "00884900",
+  "uiVersion": "2.0",
+  "scProfileId": 1026,
+  "name": "Palm Beach Atlantic University"
+}, {
+  "ficeCode": "00711800",
+  "uiVersion": "2.0",
+  "scProfileId": 1429,
+  "name": "Parkland College"
+}, {
+  "ficeCode": "00330900",
+  "uiVersion": "2.0",
+  "scProfileId": 5008,
+  "name": "Peirce College"
+}, {
+  "ficeCode": "01014980",
+  "uiVersion": "2.0",
+  "scProfileId": 3999,
+  "name": "Pepperdine University-Law School"
+}, {
+  "ficeCode": "00393600",
+  "uiVersion": "2.0",
+  "scProfileId": 4190,
+  "name": "Pontifical Catholic University of Puerto Rico"
+}, {
+  "ficeCode": "00279800",
+  "uiVersion": "2.0",
+  "scProfileId": 3429,
+  "name": "Pratt Institute"
+}, {
+  "ficeCode": "00344500",
+  "uiVersion": "2.0",
+  "scProfileId": 4384,
+  "name": "Presbyterian College"
+}, {
+  "ficeCode": "99979900",
+  "uiVersion": "2.0",
+  "scProfileId": 30663,
+  "name": "QA AUTOMATION ELLUCIAN COLLEAGUE - DO NOT CHANGE."
+}, {
+  "ficeCode": "00155400",
+  "uiVersion": "2.0",
+  "scProfileId": 1174,
+  "name": "QA AUTOMATION SCHOOL - DO NOT CHANGE."
+}, {
+  "ficeCode": "55566605",
+  "uiVersion": "2.0",
+  "scProfileId": 200303,
+  "name": "QA DO NOT USE - TS PROFILE"
+}, {
+  "ficeCode": "00295700",
+  "uiVersion": "2.0",
+  "scProfileId": 2886,
+  "name": "Queens University of Charlotte"
+}, {
+  "ficeCode": "00373200",
+  "uiVersion": "2.0",
+  "scProfileId": 194,
+  "name": "Radford University"
+}, {
+  "ficeCode": "00373400",
+  "uiVersion": "2.0",
+  "scProfileId": 4299,
+  "name": "Randolph College"
+}, {
+  "ficeCode": "00773100",
+  "uiVersion": "2.0",
+  "scProfileId": 3147,
+  "name": "Raritan Valley Community College"
+}, {
+  "ficeCode": "00258600",
+  "uiVersion": "2.0",
+  "scProfileId": 3101,
+  "name": "Rivier College"
+}, {
+  "ficeCode": "00237300",
+  "uiVersion": "2.0",
+  "scProfileId": 2556,
+  "name": "Rochester Community and Technical College"
+}, {
+  "ficeCode": "00296800",
+  "uiVersion": "2.0",
+  "scProfileId": 2938,
+  "name": "Saint Augustine's College"
+}, {
+  "ficeCode": "00234200",
+  "uiVersion": "2.0",
+  "scProfileId": 2562,
+  "name": "Saint Catherine University"
+}, {
+  "ficeCode": "00336400",
+  "uiVersion": "2.0",
+  "scProfileId": 4802,
+  "name": "Saint Charles Borromeo Seminary, Overbrook"
+}, {
+  "ficeCode": "00553300",
+  "uiVersion": "2.0",
+  "scProfileId": 2536,
+  "name": "Saint Paul College A Community & Technical College"
+}, {
+  "ficeCode": "00128000",
+  "uiVersion": "2.0",
+  "scProfileId": 497,
+  "name": "San Joaquin Delta College"
+}, {
+  "ficeCode": "00128500",
+  "uiVersion": "2.0",
+  "scProfileId": 529,
+  "name": "Santa Barbara City College"
+}, {
+  "ficeCode": "00281300",
+  "uiVersion": "2.0",
+  "scProfileId": 3410,
+  "name": "Sarah Lawrence College"
+}, {
+  "ficeCode": "00175200",
+  "uiVersion": "2.0",
+  "scProfileId": 1424,
+  "name": "Sauk Valley Community College"
+}, {
+  "ficeCode": "00466700",
+  "uiVersion": "2.0",
+  "scProfileId": 2080,
+  "name": "School of Museum of Fine Arts"
+}, {
+  "ficeCode": "00379100",
+  "uiVersion": "2.0",
+  "scProfileId": 3721,
+  "name": "Shoreline Community College"
+}, {
+  "ficeCode": "00159100",
+  "uiVersion": "2.0",
+  "scProfileId": 1160,
+  "name": "Shorter University"
+}, {
+  "ficeCode": "00919200",
+  "uiVersion": "2.0",
+  "scProfileId": 3286,
+  "name": "Sierra Nevada College"
+}, {
+  "ficeCode": "00886000",
+  "uiVersion": "2.0",
+  "scProfileId": 5325,
+  "name": "SIT Graduate Institute/SIT Study Abroad"
+}, {
+  "ficeCode": "00379200",
+  "uiVersion": "2.0",
+  "scProfileId": 4226,
+  "name": "Skagit Valley College"
+}, {
+  "ficeCode": "00199700",
+  "uiVersion": "2.0",
+  "scProfileId": 1854,
+  "name": "Somerset Community College"
+}, {
+  "ficeCode": "00537200",
+  "uiVersion": "2.0",
+  "scProfileId": 3716,
+  "name": "South Puget Sound Community College"
+}, {
+  "ficeCode": "03066500",
+  "uiVersion": "2.0",
+  "scProfileId": 7066,
+  "name": "Southeastern Technical College"
+}, {
+  "ficeCode": "00351800",
+  "uiVersion": "2.0",
+  "scProfileId": 5591,
+  "name": "Southern Adventist University"
+}, {
+  "ficeCode": "00361300",
+  "uiVersion": "2.0",
+  "scProfileId": 3865,
+  "name": "Southern Methodist University"
+}, {
+  "ficeCode": "00157000",
+  "uiVersion": "2.0",
+  "scProfileId": 98,
+  "name": "Southern Polytechnic State University"
+}, {
+  "ficeCode": "00250200",
+  "uiVersion": "2.0",
+  "scProfileId": 2721,
+  "name": "Southwest Baptist University"
+}, {
+  "ficeCode": "00237500",
+  "uiVersion": "2.0",
+  "scProfileId": 2558,
+  "name": "Southwest Minnesota State University"
+}, {
+  "ficeCode": "00361600",
+  "uiVersion": "2.0",
+  "scProfileId": 4946,
+  "name": "Southwestern Assemblies of God University"
+}, {
+  "ficeCode": "00194000",
+  "uiVersion": "2.0",
+  "scProfileId": 1796,
+  "name": "Southwestern College Kansas"
+}, {
+  "ficeCode": "00196000",
+  "uiVersion": "2.0",
+  "scProfileId": 1826,
+  "name": "Spalding University"
+}, {
+  "ficeCode": "00954400",
+  "uiVersion": "2.0",
+  "scProfileId": 3934,
+  "name": "Spokane Falls Community College"
+}, {
+  "ficeCode": "00231800",
+  "uiVersion": "2.0",
+  "scProfileId": 2358,
+  "name": "Spring Arbor University"
+}, {
+  "ficeCode": "00221100",
+  "uiVersion": "2.0",
+  "scProfileId": 2055,
+  "name": "Springfield College"
+}, {
+  "ficeCode": "77790100",
+  "uiVersion": "2.0",
+  "scProfileId": 200555,
+  "name": "SSS-TESTING-901"
+}, {
+  "ficeCode": "77790200",
+  "uiVersion": "2.0",
+  "scProfileId": 200546,
+  "name": "SSS-TSETING-902"
+}, {
+  "ficeCode": "00130200",
+  "uiVersion": "2.0",
+  "scProfileId": 563,
+  "name": "St Mary's College of California"
+}, {
+  "ficeCode": "00238200",
+  "uiVersion": "2.0",
+  "scProfileId": 2593,
+  "name": "St Olaf College"
+}, {
+  "ficeCode": "00237700",
+  "uiVersion": "2.0",
+  "scProfileId": 2559,
+  "name": "St. Cloud State University"
+}, {
+  "ficeCode": "00130500",
+  "uiVersion": "2.0",
+  "scProfileId": 40,
+  "name": "Stanford University"
+}, {
+  "ficeCode": "00251200",
+  "uiVersion": "2.0",
+  "scProfileId": 201271,
+  "name": "STEPHENS COLLEGE NEWTEST"
+}, {
+  "ficeCode": "00153100",
+  "uiVersion": "2.0",
+  "scProfileId": 1047,
+  "name": "Stetson University"
+}, {
+  "ficeCode": "00362500",
+  "uiVersion": "2.0",
+  "scProfileId": 4724,
+  "name": "Sul Ross State University"
+}, {
+  "ficeCode": "00679100",
+  "uiVersion": "2.0",
+  "scProfileId": 3529,
+  "name": "SUNY College at Purchase"
+}, {
+  "ficeCode": "00287900",
+  "uiVersion": "2.0",
+  "scProfileId": 3451,
+  "name": "Suny Sullivan County Community College"
+}, {
+  "ficeCode": "00337000",
+  "uiVersion": "2.0",
+  "scProfileId": 4594,
+  "name": "Swarthmore College"
+}, {
+  "ficeCode": "00379600",
+  "uiVersion": "2.0",
+  "scProfileId": 4574,
+  "name": "Tacoma Community College"
+}, {
+  "ficeCode": "55566601",
+  "uiVersion": "2.0",
+  "scProfileId": 200265,
+  "name": "TEST SANDY 01"
+}, {
+  "ficeCode": "55566600",
+  "uiVersion": "2.0",
+  "scProfileId": 200193,
+  "name": "TEST SCHOOL - SANDY 1"
+}, {
+  "ficeCode": "00494800",
+  "uiVersion": "2.0",
+  "scProfileId": 5921,
+  "name": "Texas A&M Health Sciences"
+}, {
+  "ficeCode": "00791200",
+  "uiVersion": "2.0",
+  "scProfileId": 4430,
+  "name": "Thaddeus Stevens College of Technology"
+}, {
+  "ficeCode": "00143700",
+  "uiVersion": "2.0",
+  "scProfileId": 963,
+  "name": "The Catholic University of America"
+}, {
+  "ficeCode": "02155307",
+  "uiVersion": "2.0",
+  "scProfileId": 1609,
+  "name": "The Chicago School"
+}, {
+  "ficeCode": "04095300",
+  "uiVersion": "2.0",
+  "scProfileId": 15151,
+  "name": "The King's College"
+}, {
+  "ficeCode": "00253700",
+  "uiVersion": "2.0",
+  "scProfileId": 2838,
+  "name": "The University of Montana Western"
+}, {
+  "ficeCode": "00290700",
+  "uiVersion": "2.0",
+  "scProfileId": 2894,
+  "name": "The University of North Carolina at Asheville-SIS"
+}, {
+  "ficeCode": "00352900",
+  "uiVersion": "2.0",
+  "scProfileId": 200862,
+  "name": "THE UNIVERSITY OF TENNESSEE AT CHATTANOOGA"
+}, {
+  "ficeCode": "00353100",
+  "uiVersion": "2.0",
+  "scProfileId": 3784,
+  "name": "The University of Tennessee at Martin"
+}, {
+  "ficeCode": "00366100",
+  "uiVersion": "2.0",
+  "scProfileId": 4201,
+  "name": "The University of Texas at El Paso"
+}, {
+  "ficeCode": "01262700",
+  "uiVersion": "2.0",
+  "scProfileId": 2485,
+  "name": "Thomas M Cooley Law School"
+}, {
+  "ficeCode": "00200100",
+  "uiVersion": "2.0",
+  "scProfileId": 1851,
+  "name": "Thomas More College"
+}, {
+  "ficeCode": "00471300",
+  "uiVersion": "2.0",
+  "scProfileId": 2667,
+  "name": "Three Rivers Community College"
+}, {
+  "ficeCode": "20002482",
+  "uiVersion": "2.0",
+  "scProfileId": 28008,
+  "name": "To - Test School 29"
+}, {
+  "ficeCode": "20002582",
+  "uiVersion": "2.0",
+  "scProfileId": 28009,
+  "name": "To - Test School 30 TESTINGBeta"
+}, {
+  "ficeCode": "00492600",
+  "uiVersion": "2.0",
+  "scProfileId": 5877,
+  "name": "Tri-County Technical College"
+}, {
+  "ficeCode": "00177100",
+  "uiVersion": "2.0",
+  "scProfileId": 1419,
+  "name": "Trinity Christian College"
+}, {
+  "ficeCode": "00177212",
+  "uiVersion": "2.0",
+  "scProfileId": 5837,
+  "name": "Trinity International University-Law School"
+}, {
+  "ficeCode": "00104700",
+  "uiVersion": "2.0",
+  "scProfileId": 293,
+  "name": "Troy University"
+}, {
+  "ficeCode": "00159700",
+  "uiVersion": "2.0",
+  "scProfileId": 1169,
+  "name": "Truett Mcconnell College"
+}, {
+  "ficeCode": "01146200",
+  "uiVersion": "2.0",
+  "scProfileId": 257,
+  "name": "University Of Alaska, Anchorage"
+}, {
+  "ficeCode": "00106300",
+  "uiVersion": "2.0",
+  "scProfileId": 255,
+  "name": "University Of Alaska, Fairbanks"
+}, {
+  "ficeCode": "00106500",
+  "uiVersion": "2.0",
+  "scProfileId": 254,
+  "name": "University Of Alaska, Southeast"
+}, {
+  "ficeCode": "00394700",
+  "uiVersion": "2.0",
+  "scProfileId": 549,
+  "name": "University of California, Hastings College of Law"
+}, {
+  "ficeCode": "04127100",
+  "uiVersion": "2.0",
+  "scProfileId": 15014,
+  "name": "University of California-Merced"
+}, {
+  "ficeCode": "00312500",
+  "uiVersion": "2.0",
+  "scProfileId": 170,
+  "name": "University of Cincinnati"
+}, {
+  "ficeCode": "00312700",
+  "uiVersion": "2.0",
+  "scProfileId": 4198,
+  "name": "University of Dayton"
+}, {
+  "ficeCode": "00143100",
+  "uiVersion": "2.0",
+  "scProfileId": 991,
+  "name": "University of Delaware - SIS"
+}, {
+  "ficeCode": "00232300",
+  "uiVersion": "2.0",
+  "scProfileId": 2364,
+  "name": "University of Detroit Mercy"
+}, {
+  "ficeCode": "00252700",
+  "uiVersion": "2.0",
+  "scProfileId": 2840,
+  "name": "University of Great Falls"
+}, {
+  "ficeCode": "00162600",
+  "uiVersion": "2.0",
+  "scProfileId": 1366,
+  "name": "University of Idaho"
+}, {
+  "ficeCode": "00198900",
+  "uiVersion": "2.0",
+  "scProfileId": 1852,
+  "name": "University of Kentucky"
+}, {
+  "ficeCode": "00205300",
+  "uiVersion": "2.0",
+  "scProfileId": 2322,
+  "name": "University of Maine-Orono (SIS School)"
+}, {
+  "ficeCode": "00299200",
+  "uiVersion": "2.0",
+  "scProfileId": 3018,
+  "name": "University of Mary"
+}, {
+  "ficeCode": "00221000",
+  "uiVersion": "2.0",
+  "scProfileId": 200174,
+  "name": "UNIVERSITY OF MASSACHUSETTS DARTMOUTH"
+}, {
+  "ficeCode": "00232700",
+  "uiVersion": "2.0",
+  "scProfileId": 2366,
+  "name": "University of Michigan-Flint - SIS"
+}, {
+  "ficeCode": "00253600",
+  "uiVersion": "2.0",
+  "scProfileId": 2844,
+  "name": "University of Montana"
+}, {
+  "ficeCode": "00757000",
+  "uiVersion": "2.0",
+  "scProfileId": 2853,
+  "name": "University of Montana-Helena College of Technology"
+}, {
+  "ficeCode": "00256800",
+  "uiVersion": "2.0",
+  "scProfileId": 3284,
+  "name": "University of Nevada-Reno"
+}, {
+  "ficeCode": "00101600",
+  "uiVersion": "2.0",
+  "scProfileId": 283,
+  "name": "University Of North Alabama"
+}, {
+  "ficeCode": "00300500",
+  "uiVersion": "2.0",
+  "scProfileId": 4136,
+  "name": "University of North Dakota"
+}, {
+  "ficeCode": "00984100",
+  "uiVersion": "2.0",
+  "scProfileId": 1099,
+  "name": "University of North Floridaaa"
+}, {
+  "ficeCode": "00311600",
+  "uiVersion": "2.0",
+  "scProfileId": 122,
+  "name": "University of Rio Grande"
+}, {
+  "ficeCode": "00105700",
+  "uiVersion": "2.0",
+  "scProfileId": 301,
+  "name": "University of South Alabama"
+}, {
+  "ficeCode": "00132800",
+  "uiVersion": "2.0",
+  "scProfileId": 9,
+  "name": "University of Southern California"
+}, {
+  "ficeCode": "00365400",
+  "uiVersion": "2.0",
+  "scProfileId": 4914,
+  "name": "University of St. Thomas (Houston, TX)"
+}, {
+  "ficeCode": "00153800",
+  "uiVersion": "2.0",
+  "scProfileId": 1043,
+  "name": "University of Tampa"
+}, {
+  "ficeCode": "01116300",
+  "uiVersion": "2.0",
+  "scProfileId": 4921,
+  "name": "University of Texas at Tyler"
+}, {
+  "ficeCode": "00365900",
+  "uiVersion": "2.0",
+  "scProfileId": 4221,
+  "name": "University of Texas HSC-San Antonio"
+}, {
+  "ficeCode": "00993000",
+  "uiVersion": "2.0",
+  "scProfileId": 5291,
+  "name": "University of Texas of The Permian Basin"
+}, {
+  "ficeCode": "00335000",
+  "uiVersion": "2.0",
+  "scProfileId": 4233,
+  "name": "University of the Arts"
+}, {
+  "ficeCode": "00132900",
+  "uiVersion": "2.0",
+  "scProfileId": 530,
+  "name": "University of the Pacific - SIS"
+}, {
+  "ficeCode": "00367500",
+  "uiVersion": "2.0",
+  "scProfileId": 3715,
+  "name": "University of Utah"
+}, {
+  "ficeCode": "00160100",
+  "uiVersion": "2.0",
+  "scProfileId": 1154,
+  "name": "University of West Georgia"
+}, {
+  "ficeCode": "00391900",
+  "uiVersion": "2.0",
+  "scProfileId": 4,
+  "name": "University of Wisconsin-La Crosse - SIS"
+}, {
+  "ficeCode": "00392000",
+  "uiVersion": "2.0",
+  "scProfileId": 4043,
+  "name": "University of Wisconsin-Oshkosh"
+}, {
+  "ficeCode": "00367700",
+  "uiVersion": "2.0",
+  "scProfileId": 3685,
+  "name": "Utah State University - SIS"
+}, {
+  "ficeCode": "00330600",
+  "uiVersion": "2.0",
+  "scProfileId": 5217,
+  "name": "Valley Forge Christian College"
+}, {
+  "ficeCode": "00338600",
+  "uiVersion": "2.0",
+  "scProfileId": 5680,
+  "name": "Valley Forge Military College"
+}, {
+  "ficeCode": "00369285",
+  "uiVersion": "2.0",
+  "scProfileId": 18545,
+  "name": "Vermont College at Norwich University"
+}, {
+  "ficeCode": "01193400",
+  "uiVersion": "2.0",
+  "scProfileId": 5796,
+  "name": "Vermont Law School"
+}, {
+  "ficeCode": "00991200",
+  "uiVersion": "2.0",
+  "scProfileId": 200872,
+  "name": "VOLUNTEER STATE COMMUNITY COLLEGE"
+}, {
+  "ficeCode": "00345500",
+  "uiVersion": "2.0",
+  "scProfileId": 5053,
+  "name": "Voorhees College"
+}, {
+  "ficeCode": "00297885",
+  "uiVersion": "2.0",
+  "scProfileId": 201222,
+  "name": "Wake Forest University School of Medicine - PA"
+}, {
+  "ficeCode": "00484400",
+  "uiVersion": "2.0",
+  "scProfileId": 2937,
+  "name": "Wake Technical Community College"
+}, {
+  "ficeCode": "00500600",
+  "uiVersion": "2.0",
+  "scProfileId": 3720,
+  "name": "Walla Walla Community College"
+}, {
+  "ficeCode": "00693100",
+  "uiVersion": "2.0",
+  "scProfileId": 1519,
+  "name": "Waubonsee Community College"
+}, {
+  "ficeCode": "00368000",
+  "uiVersion": "2.0",
+  "scProfileId": 4026,
+  "name": "Weber State University"
+}, {
+  "ficeCode": "00290100",
+  "uiVersion": "2.0",
+  "scProfileId": 3481,
+  "name": "Wells College"
+}, {
+  "ficeCode": "00142400",
+  "uiVersion": "2.0",
+  "scProfileId": 904,
+  "name": "Wesleyan University"
+}, {
+  "ficeCode": "01048700",
+  "uiVersion": "2.0",
+  "scProfileId": 1221,
+  "name": "West Georgia Technical College"
+}, {
+  "ficeCode": "00859600",
+  "uiVersion": "2.0",
+  "scProfileId": 620,
+  "name": "West Los Angeles College"
+}, {
+  "ficeCode": "01017000",
+  "uiVersion": "2.0",
+  "scProfileId": 4702,
+  "name": "Western Dakota Technical Institute"
+}, {
+  "ficeCode": "03339400",
+  "uiVersion": "2.0",
+  "scProfileId": 5790,
+  "name": "Western Governors University"
+}, {
+  "ficeCode": "00320900",
+  "uiVersion": "2.0",
+  "scProfileId": 4502,
+  "name": "Western Oregon University"
+}, {
+  "ficeCode": "00383100",
+  "uiVersion": "2.0",
+  "scProfileId": 5840,
+  "name": "Wheeling Jesuit University"
+}, {
+  "ficeCode": "00222800",
+  "uiVersion": "2.0",
+  "scProfileId": 2033,
+  "name": "Wheelock College"
+}, {
+  "ficeCode": "00380300",
+  "uiVersion": "2.0",
+  "scProfileId": 3656,
+  "name": "Whitman College"
+}, {
+  "ficeCode": "00134200",
+  "uiVersion": "2.0",
+  "scProfileId": 537,
+  "name": "Whittier College"
+}, {
+  "ficeCode": "00134201",
+  "uiVersion": "2.0",
+  "scProfileId": 3838,
+  "name": "Whittier College-Law School"
+}, {
+  "ficeCode": "00331300",
+  "uiVersion": "2.0",
+  "scProfileId": 3669,
+  "name": "Widener University"
+}, {
+  "ficeCode": "00932200",
+  "uiVersion": "2.0",
+  "scProfileId": 201235,
+  "name": "Williamsburg Technical College"
+}, {
+  "ficeCode": "01122000",
+  "uiVersion": "2.0",
+  "scProfileId": 201233,
+  "name": "Windward Community College"
+}, {
+  "ficeCode": "00134300",
+  "uiVersion": "2.0",
+  "scProfileId": 551,
+  "name": "Woodbury University"
+}, {
+  "ficeCode": "00290300",
+  "uiVersion": "2.0",
+  "scProfileId": 3480,
+  "name": "Yeshiva University"
+}]

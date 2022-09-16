@@ -1,0 +1,75 @@
+<form [formGroup]="formGroup" novalidate>
+  <nsc-card>
+    <nsc-card-title note="All fields required, unless otherwise indicated">Recipient</nsc-card-title>
+    <nsc-card-content>
+      <div class="row">
+        <div class="col-12 col-md-10">
+          <div class="mat-caption">
+            According to the Family Educational Rights and Privacy Act (FERPA), in certain instances, schools must obtain the student's permission in order to release information from his or her educational records.  The type of consent form that is required is determined by recipient type.
+          </div>
+        </div>
+        <div class="col-12">
+          <nsc-spacer size="lg"></nsc-spacer>
+        </div>
+        <div class="col-12 col-md-8 col-lg-6">
+          <nsc-form-field-select
+            controlName="recipientType"
+            placeholder="Select Recipient Type"
+            [group]="formGroup"
+            [selectObjects]="values.recipientTypes$.value"></nsc-form-field-select>
+        </div>
+      </div>
+
+      <nsc-recipient-select-college
+        *ngIf="formGroup.controls['recipientType'].value === values.college"
+        [formGroup]="formGroup"></nsc-recipient-select-college>
+
+      <div class="col-12"></div>
+
+      <nsc-recipient-select-organization
+        *ngIf="formGroup.controls['recipientType'].value === values.organization"
+        [formGroup]="formGroup"></nsc-recipient-select-organization>
+
+      <div class="row" *ngIf="formGroup.controls['recipientType'].value === values.business">
+        <div class="col-12">
+          <nsc-spacer size="sm"></nsc-spacer>
+        </div>
+
+        <div class="col-12 col-md-10 col-lg-6">
+          <nsc-form-field-input
+            controlName="business"
+            maxlength="60"
+            placeholder="Enter Business or Individual's Name"
+            [group]="formGroup"></nsc-form-field-input>
+        </div>
+      </div>
+    </nsc-card-content>
+  </nsc-card>
+
+  <nsc-spacer size="md"></nsc-spacer>
+
+  <div class="nsc-form-actions">
+    <button
+      mat-raised-button
+      class="nsc-form-actions__button"
+      color="accent"
+      type="button"
+      (click)="cancel()">Cancel Order</button>
+    <nsc-spacer horizontal="true" size="md"></nsc-spacer>
+    <button
+      mat-raised-button
+      class="nsc-form-actions__button nsc-form-actions__button--next"
+      color="primary"
+      type="button"
+      [disabled]="!(formGroup.valid)"
+      (click)="continue()">Continue <mat-icon aria-hidden="true">chevron_right</mat-icon></button>
+  </div>
+</form>
+
+<!-- <nsc-spacer size="md"></nsc-spacer>
+<nsc-card>
+  <nsc-card-title note="development mode only">Form Data Model</nsc-card-title>
+  <nsc-card-content>
+    <textarea class="json">{{ formGroup.value | json }}</textarea>
+  </nsc-card-content>
+</nsc-card> -->

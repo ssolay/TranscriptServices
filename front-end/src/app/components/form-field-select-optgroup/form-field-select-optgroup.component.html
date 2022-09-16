@@ -1,0 +1,11 @@
+<mat-form-field [formGroup]="group">
+  <mat-select placeholder="{{ placeholder }}" formControlName="{{ controlName }}">
+    <mat-optgroup *ngFor="let obj of selectObjects" [label]="obj.label">
+      <mat-option *ngFor="let obj2 of obj.options" [value]="obj2.value">
+        {{ obj2.name }}
+      </mat-option>
+    </mat-optgroup>
+  </mat-select>
+  <mat-hint *ngIf="hint">{{ hint }}</mat-hint>
+  <mat-error *ngIf="group.controls[controlName].invalid">{{ validationMessage.get(group.controls[controlName], placeholder) }}</mat-error>
+</mat-form-field>

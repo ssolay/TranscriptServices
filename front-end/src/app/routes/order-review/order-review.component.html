@@ -1,0 +1,75 @@
+<form novalidate>
+  <nsc-card>
+    <nsc-card-title shoppingCartCount="3">Pending Order Details</nsc-card-title>
+    <nsc-card-content>
+      <div class="row nsc-row--20 align-items-center">
+        <div class="col-auto">
+          <button
+            mat-button
+            class="nsc-button"
+            type="button"
+            [disabled]="content.recipients.length >= values.maxRecipients"
+            (click)="addRecipient()">Add Recipient <mat-icon>add</mat-icon></button>
+        </div>
+        <div class="col" *ngIf="content.recipients.length >= values.maxRecipients">
+          <span class="mat-error mat-typography">You have reached the maximum number of recipients. Please complete your order.</span>
+        </div>
+        <div class="col" *ngIf="content.recipients.length === 0">
+          <span class="mat-error mat-typography">You have not selected any recipients for your transcript(s).</span>
+        </div>
+      </div>
+
+      <div class="row">
+        <div *ngFor="let recipient of content.recipients; let i = index" class="col-12 col-lg-6">
+          <nsc-spacer size="lg"></nsc-spacer>
+
+          <nsc-cart-item
+            [processingFee]="content.processingFee"
+            [recipient]="recipient"
+            (editRecipient)="editRecipient(i)"
+            (deleteRecipient)="deleteRecipient(i)"></nsc-cart-item>
+        </div>
+      </div>
+
+      <nsc-spacer size="lg"></nsc-spacer>
+
+      <div class="nsc-table nsc-table--total mat-typography" *ngIf="content.recipients.length > 0">
+        <div class="nsc-table__row">
+          <div class="nsc-table__col nsc-table__col--label" style="text-align: right;">
+            <strong>Total Fees for Order</strong>
+          </div>
+          <div class="nsc-table__col nsc-table__col--value nsc-table__col--total">
+            <strong>{{ content.totalFees | currency }}</strong>
+          </div>
+        </div>
+      </div>
+    </nsc-card-content>
+  </nsc-card>
+
+  <nsc-spacer size="md"></nsc-spacer>
+
+  <div class="nsc-form-actions">
+    <button
+      mat-raised-button
+      class="nsc-form-actions__button"
+      color="accent"
+      type="button"
+      (click)="cancel()">Cancel Order</button>
+    <nsc-spacer horizontal="true" size="md"></nsc-spacer>
+    <button
+      mat-raised-button
+      class="nsc-form-actions__button"
+      color="primary"
+      type="button"
+      [disabled]="content.recipients.length === 0"
+      (click)="continue()">Checkout <mat-icon aria-hidden="true">chevron_right</mat-icon></button>
+  </div>
+</form>
+
+<!-- <nsc-spacer size="md"></nsc-spacer>
+<nsc-card>
+  <nsc-card-title note="development mode only">Form Data Model</nsc-card-title>
+  <nsc-card-content>
+    <textarea class="json">{{ formGroup.value | json }}</textarea>
+  </nsc-card-content>
+</nsc-card> -->

@@ -1,0 +1,223 @@
+<form [formGroup]="formGroup" novalidate>
+  <nsc-card>
+    <nsc-card-title note="All fields required, unless otherwise indicated">Personal Information</nsc-card-title>
+    <nsc-card-content>
+      <div class="row">
+        <div class="col-12 col-md-4">
+          <nsc-form-field-input
+            autocomplete="given-name"
+            controlName="nameFirst"
+            maxlength="35"
+            placeholder="First Name"
+            [group]="formGroup"></nsc-form-field-input>
+        </div>
+        <div class="col-12 col-md-4">
+          <nsc-form-field-input
+            autocomplete="additional-name"
+            controlName="nameMiddle"
+            maxlength="35"
+            placeholder="Middle Name"
+            [group]="formGroup"
+            [required]="false"></nsc-form-field-input>
+        </div>
+        <div class="col-12 col-md-4">
+          <nsc-form-field-input
+            autocomplete="family-name"
+            controlName="nameLast"
+            maxlength="35"
+            placeholder="Last Name"
+            [group]="formGroup"></nsc-form-field-input>
+        </div>
+
+        <div class="col-12 col-md-4">
+          <nsc-form-field-input
+            placeholder="Date of Birth"
+            controlName="dob"
+            hint="MM/DD/YYYY"
+            [group]="formGroup"
+            [mask]="masks.date"></nsc-form-field-input>
+        </div>
+        <div class="col-12 col-lg-8">
+          <nsc-form-field-toggle
+            controlName="nameChanged"
+            label="Has your name changed since attending school?"
+            [group]="formGroup"></nsc-form-field-toggle>
+        </div>
+      </div>
+    </nsc-card-content>
+  </nsc-card>
+
+  <div *ngIf="formGroup.controls['nameChangedFirst'].enabled">
+    <nsc-spacer size="md"></nsc-spacer>
+
+    <nsc-card>
+      <nsc-card-title>My name while attending school</nsc-card-title>
+      <nsc-card-content>
+        <div class="row">
+          <div class="col-12 col-md-4">
+            <nsc-form-field-input
+              controlName="nameChangedFirst"
+              maxlength="35"
+              placeholder="First Name"
+              [group]="formGroup"></nsc-form-field-input>
+          </div>
+          <div class="col-12 col-md-4">
+            <nsc-form-field-input
+              controlName="nameChangedMiddle"
+              maxlength="35"
+              placeholder="Middle Name"
+              [group]="formGroup"
+              [required]="false"></nsc-form-field-input>
+          </div>
+          <div class="col-12 col-md-4">
+            <nsc-form-field-input
+              controlName="nameChangedLast"
+              maxlength="35"
+              placeholder="Last Name"
+              [group]="formGroup"></nsc-form-field-input>
+          </div>
+        </div>
+      </nsc-card-content>
+    </nsc-card>
+  </div>
+
+  <nsc-spacer size="md"></nsc-spacer>
+
+  <nsc-card>
+    <nsc-card-title>Student Identification Information</nsc-card-title>
+    <nsc-card-content>
+      <div class="row">
+        <div class="col-12" *ngIf="show.studentIdPrimary && show.studentIdConfirm">
+          <nsc-form-field-confirm
+            controlNameConfirm="studentIdConfirm"
+            controlNamePrimary="studentIdPrimary"
+            maxlength="{{ values.studentIdMaxLength }}"
+            placeholder="{{ content.labelStudentId }}"
+            [group]="formGroup"
+            [requiredConfirm]="require.studentIdConfirm"
+            [requiredPrimary]="require.studentIdPrimary"></nsc-form-field-confirm>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4" *ngIf="show.studentIdPrimary && !show.studentIdConfirm">
+          <nsc-form-field-input
+            controlName="studentIdPrimary"
+            maxlength="{{ values.studentIdMaxLength }}"
+            placeholder="{{ content.labelStudentId }}"
+            [group]="formGroup"
+            [required]="require.studentIdPrimary"></nsc-form-field-input>
+        </div>
+
+        <div class="col-12" *ngIf="require.one">
+          <div class="mat-typography nsc-or">or</div>
+        </div>
+
+        <div class="col-12" *ngIf="show.ssn">
+          <nsc-form-field-confirm
+            controlNameConfirm="ssnConfirm"
+            controlNamePrimary="ssnPrimary"
+            hint="XXX-XX-XXXX"
+            maxlength="11"
+            placeholder="Social Security Number"
+            type="password"
+            [group]="formGroup"
+            [mask]="masks.ssn"
+            [requiredConfirm]="require.ssn"
+            [requiredPrimary]="require.ssn"></nsc-form-field-confirm>
+        </div>
+
+        <div class="col-12">
+          <hr class="nsc-hr" style="margin-bottom: 25px;">
+        </div>
+
+        <div class="col-12" *ngIf="show.pathQuestion">
+          <nsc-form-field-toggle
+            controlName="path"
+            help="{{ content.pathHelp }}"
+            label="{{ content.pathQuestion }}"
+            valueNo="P"
+            valueYes="F"
+            [group]="formGroup"></nsc-form-field-toggle>
+        </div>
+
+        <div class="col-12">
+          <nsc-form-field-toggle
+            controlName="enrolledCurrently"
+            label="Are you currently enrolled?"
+            [group]="formGroup"></nsc-form-field-toggle>
+        </div>
+
+        <div class="col-12" *ngIf="show.enrolledBeforeQuestion">
+          <nsc-form-field-toggle
+            controlName="enrolledBefore"
+            label="{{ content.enrolledBeforeQuestion }}"
+            [group]="formGroup"></nsc-form-field-toggle>
+          <div class="mat-caption"><strong>Note:</strong> Electronic delivery is not available if you attended prior to the date above.</div>
+
+          <nsc-spacer size="sm"></nsc-spacer>
+        </div>
+
+        <div class="col-12" *ngIf="formGroup.controls['enrolledYearFrom'].enabled && formGroup.controls['enrolledYearTo'].enabled">
+          <div class="row">
+            <div class="col-12 col-md-4">
+              <nsc-form-field-input
+                controlName="enrolledYearFrom"
+                hint="YYYY"
+                maxlength="4"
+                placeholder="Year From"
+                [group]="formGroup"
+                [mask]="masks.year"></nsc-form-field-input>
+            </div>
+            <div class="col-12 col-md-4">
+              <nsc-form-field-input
+                controlName="enrolledYearTo"
+                hint="YYYY"
+                maxlength="4"
+                placeholder="Year To"
+                [group]="formGroup"
+                [mask]="masks.year"></nsc-form-field-input>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nsc-card-content>
+  </nsc-card>
+
+  <div *ngIf="show.deliveryUnavailable">
+    <nsc-spacer size="md"></nsc-spacer>
+
+    <nsc-card class="nsc-card--error">
+      <nsc-card-title [error]="true">Invalid Delivery Methods</nsc-card-title>
+      <nsc-card-content>
+        <div class="mat-typography">
+          Your school cannot produce this transcript in an electronic format. Please contact your school's registrar office for assistance.
+        </div>
+      </nsc-card-content>
+    </nsc-card>
+  </div>
+
+  <nsc-spacer size="md"></nsc-spacer>
+
+  <div class="nsc-form-actions">
+    <button
+      mat-raised-button
+      class="nsc-form-actions__button"
+      color="accent"
+      type="button"
+      (click)="cancel()">Cancel Order</button>
+    <nsc-spacer horizontal="true" size="md"></nsc-spacer>
+    <button
+      mat-raised-button
+      class="nsc-form-actions__button nsc-form-actions__button--next"
+      color="primary"
+      type="button"
+      [disabled]="!(formGroup.valid && !show.deliveryUnavailable)"
+      (click)="continue()">Continue <mat-icon aria-hidden="true">chevron_right</mat-icon></button>
+  </div>
+</form>
+
+<!-- <nsc-spacer size="md"></nsc-spacer>
+<nsc-card>
+  <nsc-card-title note="development mode only">Form Data Model</nsc-card-title>
+  <nsc-card-content>
+    <textarea class="json">{{ formGroup.value | json }}</textarea>
+  </nsc-card-content>
+</nsc-card> -->

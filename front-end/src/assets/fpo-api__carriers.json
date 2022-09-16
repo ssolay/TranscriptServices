@@ -1,0 +1,18 @@
+[
+  {
+    "code": "att",
+    "description": "AT&T"
+  },
+  {
+    "code": "sprint",
+    "description": "Sprint"
+  },
+  {
+    "code": "tmobile",
+    "description": "T-Mobile"
+  },
+  {
+    "code": "verizon",
+    "description": "Verizon"
+  }
+]

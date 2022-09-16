@@ -1,0 +1,38 @@
+<div *ngIf="show.stepper">
+  <nsc-card class="mat-typography">
+    <nsc-card-content class="nsc-card-content--tight">
+      <div class="nsc-stepper">
+        <div class="nsc-stepper__col" [class.selected]="content.step1Selected">
+          <div class="nsc-stepper__step" [class.selected]="content.step1Selected">
+            <div class="nsc-stepper__step--icon">
+              <strong class="icon">1</strong>
+            </div>
+            <div class="nsc-stepper__step--label mat-caption">Enter Personal Information</div>
+          </div>
+        </div>
+        <div class="nsc-stepper__col">
+          <div class="nsc-stepper__indicator {{ content.line1Class }}"></div>
+        </div>
+        <div class="nsc-stepper__col" [class.selected]="content.step2Selected">
+          <div class="nsc-stepper__step" [class.selected]="content.step2Selected">
+            <div class="nsc-stepper__step--icon">
+              <strong class="icon">2</strong>
+            </div>
+            <div class="nsc-stepper__step--label mat-caption">Select Transcript and Delivery Details</div>
+          </div>
+        </div>
+        <div class="nsc-stepper__col">
+          <div class="nsc-stepper__indicator {{ content.line2Class }}"></div>
+        </div>
+        <div class="nsc-stepper__col" [class.selected]="content.step3Selected">
+          <div class="nsc-stepper__step" [class.selected]="content.step3Selected">
+            <div class="nsc-stepper__step--icon">
+              <strong class="icon">3</strong>
+            </div>
+            <div class="nsc-stepper__step--label mat-caption">Confirm Order and Checkout</div>
+          </div>
+        </div>
+      </div>
+    </nsc-card-content>
+  </nsc-card>
+</div>

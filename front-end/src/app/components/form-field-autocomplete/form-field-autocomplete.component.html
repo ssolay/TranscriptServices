@@ -1,0 +1,27 @@
+<mat-form-field
+  [ngClass]="loading ? 'nsc-form-field-loading' : ''"
+  [formGroup]="group"
+  class="nsc-form-field-autocomplete">
+  <input
+    #itemFilterInput
+    matInput
+    autocomplete="off"
+    formControlName="{{ controlName }}"
+    placeholder="{{ placeholder }}"
+    type="text"
+    (blur)="onBlur()"
+    (focus)="onFocus()">
+  <mat-card
+    *ngIf="show.autocomplete"
+    #optionList>
+    <mat-option
+      *ngFor="let option of values.autocomplete; let i = index;"
+      [disabled]="option.disabled"
+      [ngClass]="optionClass(i)"
+      [value]="option.name"
+      (click)="!option.disabled && selectOption(option)"
+      (mouseenter)="optionHoverHandler($event, i)">
+      {{ option.name }}
+    </mat-option>
+  </mat-card>
+</mat-form-field>

@@ -1,0 +1,16 @@
+@import '~styles/variables';
+
+.nsc-app-footer {
+  background: $color-gray-light;
+  padding: 40px 0;
+  text-align: center;
+
+  a {
+    color: inherit;
+  }
+
+  img {
+    height: 35px;
+    width: 150px;
+  }
+}

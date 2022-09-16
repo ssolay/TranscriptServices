@@ -1,0 +1,331 @@
+[{
+  "schlName": "Alabama A&M University",
+  "state": "AL",
+  "sourceType": "ETX",
+  "orgType": "college/university",
+  "ficeCode": "00100200"
+}, {
+  "schlName": "Alabama Southern Community College",
+  "state": "AL",
+  "sourceType": "ETX",
+  "orgType": "college/university",
+  "ficeCode": "00103400"
+}, {
+  "schlName": "Alabama State University",
+  "state": "AL",
+  "sourceType": "sentry",
+  "orgType": "college/university",
+  "ficeCode": "00100500"
+}, {
+  "schlName": "Amridge University",
+  "state": "AL",
+  "sourceType": "ETX",
+  "orgType": "college/university",
+  "ficeCode": "02503400"
+}, {
+  "schlName": "Athens State University",
+  "state": "AL",
+  "sourceType": "ETX",
+  "orgType": "college/university",
+  "ficeCode": "00100800"
+}, {
+  "schlName": "Auburn University",
+  "state": "AL",
+  "sourceType": "ETX",
+  "orgType": "college/university",
+  "ficeCode": "00100900"
+}, {
+  "schlName": "Auburn University At Montgomery",
+  "state": "AL",
+  "sourceType": "ETX",
+  "orgType": "college/university",
+  "ficeCode": "00831000"
+}, {
+  "schlName": "Bevill State Community College",
+  "state": "AL",
+  "sourceType": "ETX",
+  "orgType": "college/university",
+  "ficeCode": "00573300"
+}, {
+  "schlName": "Birmingham - Southern College",
+  "state": "AL",
+  "sourceType": "ETX",
+  "orgType": "college/university",
+  "ficeCode": "00101200"
+}, {
+  "schlName": "Bishop State Community College",
+  "state": "AL",
+  "sourceType": "ETX",
+  "orgType": "college/university",
+  "ficeCode": "00103000"
+}, {
+  "schlName": "Calhoun Community College",
+  "state": "AL",
+  "sourceType": "sentry",
+  "orgType": "college/university",
+  "ficeCode": "00101300"
+}, {
+  "schlName": "Central Alabama Community College",
+  "state": "AL",
+  "sourceType": "sentry",
+  "orgType": "college/university",
+  "ficeCode": "00100700"
+}, {
+  "schlName": "Chattahoochee Valley Community College",
+  "state": "AL",
+  "sourceType": "ETX",
+  "orgType": "college/university",
+  "ficeCode": "01218200"
+}, {
+  "schlName": "Columbia Southern University",
+  "state": "AL",
+  "sourceType": "sentry",
+  "orgType": "college/university",
+  "ficeCode": "04121500"
+}, {
+  "schlName": "Community College Of The Air Force",
+  "state": "AL",
+  "sourceType": "ETX",
+  "orgType": "college/university",
+  "ficeCode": "01230800"
+}, {
+  "schlName": "Enterprise State Community College",
+  "state": "AL",
+  "sourceType": "sentry",
+  "orgType": "college/university",
+  "ficeCode": "00101500"
+}, {
+  "schlName": "Faulkner State Community College",
+  "state": "AL",
+  "sourceType": "ETX",
+  "orgType": "college/university",
+  "ficeCode": "00106000"
+}, {
+  "schlName": "Faulkner University",
+  "state": "AL",
+  "sourceType": "ETX",
+  "orgType": "college/university",
+  "ficeCode": "00100300"
+}, {
+  "schlName": "Gadsden State Community College",
+  "state": "AL",
+  "sourceType": "sentry",
+  "orgType": "college/university",
+  "ficeCode": "00101700"
+}, {
+  "schlName": "Heritage Christian University",
+  "state": "AL",
+  "sourceType": "ETX",
+  "orgType": "college/university",
+  "ficeCode": "02199700"
+}, {
+  "schlName": "J. F. Drake State Technical College",
+  "state": "AL",
+  "sourceType": "ETX",
+  "orgType": "college/university",
+  "ficeCode": "00526000"
+}, {
+  "schlName": "Jacksonville State University",
+  "state": "AL",
+  "sourceType": "sentry",
+  "orgType": "college/university",
+  "ficeCode": "00102000"
+}, {
+  "schlName": "Jefferson Davis Community College",
+  "state": "AL",
+  "sourceType": "sentry",
+  "orgType": "college/university",
+  "ficeCode": "00102100"
+}, {
+  "schlName": "Jefferson State Community College",
+  "state": "AL",
+  "sourceType": "ETX",
+  "orgType": "college/university",
+  "ficeCode": "00102200"
+}, {
+  "schlName": "Judson College",
+  "state": "AL",
+  "sourceType": "ETX",
+  "orgType": "college/university",
+  "ficeCode": "00102300"
+}, {
+  "schlName": "Lawson State Community College",
+  "state": "AL",
+  "sourceType": "ETX",
+  "orgType": "college/university",
+  "ficeCode": "00105900"
+}, {
+  "schlName": "Lurleen B. Wallace Community College",
+  "state": "AL",
+  "sourceType": "ETX",
+  "orgType": "college/university",
+  "ficeCode": "00898800"
+}, {
+  "schlName": "Marion Military Institute",
+  "state": "AL",
+  "sourceType": "sentry",
+  "orgType": "college/university",
+  "ficeCode": "00102600"
+}, {
+  "schlName": "Miles College",
+  "state": "AL",
+  "sourceType": "ETX",
+  "orgType": "college/university",
+  "ficeCode": "00102800"
+}, {
+  "schlName": "Northeast Alabama State Community College",
+  "state": "AL",
+  "sourceType": "ETX",
+  "orgType": "college/university",
+  "ficeCode": "00103100"
+}, {
+  "schlName": "Northwst-Shoals Community College",
+  "state": "AL",
+  "sourceType": "ETX",
+  "orgType": "college/university",
+  "ficeCode": "00569700"
+}, {
+  "schlName": "Oakwood University",
+  "state": "AL",
+  "sourceType": "sentry",
+  "orgType": "college/university",
+  "ficeCode": "00103300"
+}, {
+  "schlName": "Reid State Technical College",
+  "state": "AL",
+  "sourceType": "ETX",
+  "orgType": "college/university",
+  "ficeCode": "00569200"
+}, {
+  "schlName": "Samford University",
+  "state": "AL",
+  "sourceType": "sentry",
+  "orgType": "college/university",
+  "ficeCode": "00103600"
+}, {
+  "schlName": "Shelton State Community College",
+  "state": "AL",
+  "sourceType": "ETX",
+  "orgType": "college/university",
+  "ficeCode": "00569100"
+}, {
+  "schlName": "Snead State Community College",
+  "state": "AL",
+  "sourceType": "ETX",
+  "orgType": "college/university",
+  "ficeCode": "00103800"
+}, {
+  "schlName": "Southeastern Bible College",
+  "state": "AL",
+  "sourceType": "ETX",
+  "orgType": "college/university",
+  "ficeCode": "02270400"
+}, {
+  "schlName": "Southern Union State Community College",
+  "state": "AL",
+  "sourceType": "ETX",
+  "orgType": "college/university",
+  "ficeCode": "00104000"
+}, {
+  "schlName": "Talladega College",
+  "state": "AL",
+  "sourceType": "ETX",
+  "orgType": "college/university",
+  "ficeCode": "00104600"
+}, {
+  "schlName": "The University Of Alabama Huntsville",
+  "state": "AL",
+  "sourceType": "ETX",
+  "orgType": "college/university",
+  "ficeCode": "00105500"
+}, {
+  "schlName": "Trenholm State Technical College",
+  "state": "AL",
+  "sourceType": "sentry",
+  "orgType": "college/university",
+  "ficeCode": "00573400"
+}, {
+  "schlName": "Troy University",
+  "state": "AL",
+  "sourceType": "ETX",
+  "orgType": "college/university",
+  "ficeCode": "00104700"
+}, {
+  "schlName": "Tuskegee University",
+  "state": "AL",
+  "sourceType": "ETX",
+  "orgType": "college/university",
+  "ficeCode": "00105000"
+}, {
+  "schlName": "United States Sports Academy",
+  "state": "AL",
+  "sourceType": "sentry",
+  "orgType": "college/university",
+  "ficeCode": "02170600"
+}, {
+  "schlName": "University Of Alabama",
+  "state": "AL",
+  "sourceType": "ETX",
+  "orgType": "college/university",
+  "ficeCode": "00105100"
+}, {
+  "schlName": "University Of Alabama At Birmingham",
+  "state": "AL",
+  "sourceType": "ETX",
+  "orgType": "college/university",
+  "ficeCode": "00105200"
+}, {
+  "schlName": "University Of Mobile",
+  "state": "AL",
+  "sourceType": "ETX",
+  "orgType": "college/university",
+  "ficeCode": "00102900"
+}, {
+  "schlName": "University Of Montevallo",
+  "state": "AL",
+  "sourceType": "ETX",
+  "orgType": "college/university",
+  "ficeCode": "00100400"
+}, {
+  "schlName": "University Of North Alabama",
+  "state": "AL",
+  "sourceType": "ETX",
+  "orgType": "college/university",
+  "ficeCode": "00101600"
+}, {
+  "schlName": "University Of South Alabama",
+  "state": "AL",
+  "sourceType": "ETX",
+  "orgType": "college/university",
+  "ficeCode": "00105700"
+}, {
+  "schlName": "University Of West Alabama",
+  "state": "AL",
+  "sourceType": "ETX",
+  "orgType": "college/university",
+  "ficeCode": "00102400"
+}, {
+  "schlName": "Virginia College - Birmingham",
+  "state": "AL",
+  "sourceType": "sentry",
+  "orgType": "college/university",
+  "ficeCode": "03010600"
+}, {
+  "schlName": "Wallace Community College",
+  "state": "AL",
+  "sourceType": "ETX",
+  "orgType": "college/university",
+  "ficeCode": "00101800"
+}, {
+  "schlName": "Wallace Community College - Selma",
+  "state": "AL",
+  "sourceType": "sentry",
+  "orgType": "college/university",
+  "ficeCode": "00569900"
+}, {
+  "schlName": "Wallace State Community College",
+  "state": "AL",
+  "sourceType": "ETX",
+  "orgType": "college/university",
+  "ficeCode": "00787100"
+}]

@@ -1,0 +1,18 @@
+[
+  {
+    "code": "S",
+    "description": "College or University"
+  },
+  {
+    "code": "A",
+    "description": "Organization"
+  },
+  {
+    "code": "O",
+    "description": "Business or Individual"
+  },
+  {
+    "code": "M",
+    "description": "Me"
+  }
+]

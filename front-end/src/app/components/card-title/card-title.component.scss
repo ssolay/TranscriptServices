@@ -1,0 +1,24 @@
+@import '~breakpoint-sass/stylesheets/breakpoint';
+@import '~styles/variables';
+
+.nsc-card-title {
+  background: $color-gray-bg-light;
+  padding: 10px 20px;
+
+  &--error {
+    background: $color-red;
+    color: #fff;
+  }
+
+  // optional note (required fields note typically);
+  &__note {
+    display: block;
+    opacity: $font-opacity;
+
+    // at desktop, show the content inline instead of stacked;
+    @include breakpoint($breakpoint-md) {
+      display: inline;
+      padding-left: 1em;
+    }
+  }
+}

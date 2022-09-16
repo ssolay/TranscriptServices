@@ -1,0 +1,9 @@
+{
+  "exchangeNetworkType": "ETX",
+  "recipientDepartments": [{
+    "deptId": 206768,
+    "deptName": "Administration",
+    "ftpAccountName": "acyraz00",
+    "fileFormat": "PDF"
+  }]
+}

@@ -1,0 +1,92 @@
+@import '~breakpoint-sass/stylesheets/breakpoint';
+@import '~styles/variables';
+
+@import 'global/nsc-form-actions';
+@import 'global/nsc-table';
+@import 'global/nsc-row';
+
+body {
+  background: $color-gray-bg-medium;
+  color: $color-gray-dark;
+  margin: 0;
+  font-size: 16px;
+
+  @include breakpoint($breakpoint-md) {
+    font-size: 14px;
+  }
+}
+
+a {
+  color: #000;
+}
+
+// override any inline styles set by FONT tag attributes;
+font {
+  font-size: inherit !important;
+  font-family: inherit !important;
+}
+
+strong {
+  font-weight: 500;
+}
+
+// container for everything within the BODY;
+.nsc-app-root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+// container for the main content of the page;
+.nsc-content {
+  flex-grow: 1;
+}
+
+// custom horizontal rule, apply to an HR tag;
+.nsc-hr {
+  margin: 20px -20px;
+  border: 0;
+  border-top: 1px solid $color-gray-bg-dark;
+
+  @include breakpoint($breakpoint-md) {
+    margin: 35px -45px;
+  }
+}
+
+// apply to default .mat-button to add an optional border;
+.mat-button.nsc-button {
+  border: 2px solid $color-gray-light;
+
+  &.selected {
+    background-color: $color-gray-light;
+  }
+}
+
+// FPO display of FORM data;
+.json {
+  box-sizing: border-box;
+  width: 100%;
+  font-family: monospace;
+  border: 0;
+  padding: 10px;
+  height: 25em;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+
+// Overriding styles for input underlines during loading
+.nsc-form-field-loading .mat-form-field-underline {
+  height: 2px !important;
+  background: linear-gradient(to right, $color-gray-dark, $color-gray-dark 25%, #fff 50%, $color-gray-dark 75%, $color-gray-dark 100%) !important;
+  animation: gradientAnimation 2s ease infinite !important;
+  background-size: 300% 100% !important;
+}
+@keyframes gradientAnimation {
+  0%{background-position:100% 50%}
+  50%{background-position:0% 50%}
+  100%{background-position:100% 50%}
+}
+.nsc-form-field-loading .mat-form-field-ripple {
+  display: none !important;
+}

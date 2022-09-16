@@ -1,0 +1,135 @@
+<form [formGroup]="formGroup" novalidate>
+  <nsc-card>
+    <nsc-card-title note="All fields required, unless otherwise indicated">Recipient Delivery Information</nsc-card-title>
+    <nsc-card-content>
+      <div class="row">
+        <div class="col-12 col-lg-8">
+          <mat-form-field>
+            <input
+              matInput
+              formControlName="recipient"
+              placeholder="Name of Recipient"
+              [readonly]="values.recipientReadonly"
+              [value]="formGroup.controls['recipient'].value">
+          </mat-form-field>
+        </div>
+
+        <div class="col-12 col-lg-8">
+          <nsc-form-field-input
+            controlName="attention"
+            maxlength="40"
+            placeholder="Attention"
+            [group]="formGroup"
+            [required]="require.attention"></nsc-form-field-input>
+        </div>
+
+        <div class="col-12 col-lg-8">
+          <nsc-form-field-input
+            autocomplete="shipping address-line1"
+            controlName="addressLine1"
+            hint="Street number and name or PO Box"
+            maxlength="30"
+            placeholder="Address 1"
+            [group]="formGroup"></nsc-form-field-input>
+        </div>
+
+        <div class="col-12 col-lg-8">
+          <nsc-form-field-input
+            autocomplete="shipping address-line2"
+            controlName="addressLine2"
+            hint="Building, campus box, floor, apt, suite"
+            maxlength="30"
+            placeholder="Address 2"
+            [group]="formGroup"
+            [required]="false"></nsc-form-field-input>
+        </div>
+        <div class="col-12 col-lg-4">
+        </div>
+
+        <div class="col-12 col-lg-4">
+          <nsc-form-field-input
+            autocomplete="shipping postal-code"
+            controlName="zip"
+            hint="{{ content.hintZip }}"
+            maxlength="10"
+            placeholder="Zip/Postal Code"
+            [group]="formGroup"></nsc-form-field-input>
+        </div>
+        <div class="col-12 col-lg-4">
+          <nsc-form-field-input
+            autocomplete="shipping address-level2"
+            controlName="city"
+            maxlength="20"
+            placeholder="City"
+            [group]="formGroup"></nsc-form-field-input>
+        </div>
+        <div class="col-12 col-lg-4">
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <nsc-form-field-select-optgroup
+            controlName="state"
+            placeholder="{{ content.labelState }}"
+            [group]="formGroup"
+            [selectObjects]="values.states$.value"></nsc-form-field-select-optgroup>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <nsc-form-field-select
+            controlName="country"
+            placeholder="Country"
+            [group]="formGroup"
+            [selectObjects]="values.countries$.value"></nsc-form-field-select>
+        </div>
+        <div class="col-12 col-lg-4">
+        </div>
+
+        <div class="col-12 col-lg-4">
+          <nsc-form-field-input
+            #phone
+            autocomplete="tel"
+            controlName="phone"
+            hint="{{ content.hintPhone }}"
+            maxlength="20"
+            placeholder="Phone Number"
+            [group]="formGroup"
+            [mask]="masks.phonemask"
+            [required]="require.phone"></nsc-form-field-input>
+        </div>
+      </div>
+    </nsc-card-content>
+  </nsc-card>
+
+  <nsc-spacer size="md"></nsc-spacer>
+
+  <div class="nsc-form-actions">
+    <button
+      mat-raised-button
+      class="nsc-form-actions__button nsc-form-actions__button--previous"
+      color="primary"
+      type="button"
+      (click)="previous()"><mat-icon aria-hidden="true">chevron_left</mat-icon> Previous</button>
+    <nsc-spacer horizontal="true" size="md"></nsc-spacer>
+    <button
+      mat-raised-button
+      class="nsc-form-actions__button"
+      color="accent"
+      type="button"
+      (click)="cancel()">Cancel</button>
+    <nsc-spacer horizontal="true" size="md"></nsc-spacer>
+    <button
+      mat-raised-button
+      class="nsc-form-actions__button nsc-form-actions__button--next"
+      color="primary"
+      type="button"
+      [disabled]="!formGroup.valid"
+      (click)="continue()">Add to Cart <mat-icon aria-hidden="true">chevron_right</mat-icon></button>
+  </div>
+</form>
+
+<!-- <nsc-spacer size="md"></nsc-spacer>
+<nsc-card>
+  <nsc-card-title note="development mode only">Form Data Model</nsc-card-title>
+  <nsc-card-content>
+    <textarea class="json">{{ formGroup.value | json }}</textarea>
+  </nsc-card-content>
+</nsc-card> -->

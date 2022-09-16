@@ -1,0 +1,61 @@
+<form [formGroup]="formGroup" novalidate>
+  <nsc-card>
+    <nsc-card-title note="All fields required, unless otherwise indicated">Recipient Delivery Information</nsc-card-title>
+    <nsc-card-content>
+      <div class="row">
+        <div class="col-12 col-lg-8">
+          <mat-form-field>
+            <input
+              matInput
+              readonly
+              placeholder="Recipient"
+              [value]="formGroup.controls['recipient'].value">
+          </mat-form-field>
+        </div>
+
+        <div class="col-12">
+          <nsc-form-field-confirm
+            autocomplete="email"
+            controlNameConfirm="emailConfirm"
+            controlNamePrimary="emailPrimary"
+            placeholder="Email Address"
+            [group]="formGroup"></nsc-form-field-confirm>
+        </div>
+      </div>
+    </nsc-card-content>
+  </nsc-card>
+
+  <nsc-spacer size="md"></nsc-spacer>
+
+  <div class="nsc-form-actions">
+    <button
+      mat-raised-button
+      class="nsc-form-actions__button nsc-form-actions__button--previous"
+      color="primary"
+      type="button"
+      (click)="previous()"><mat-icon aria-hidden="true">chevron_left</mat-icon> Previous</button>
+    <nsc-spacer horizontal="true" size="md"></nsc-spacer>
+    <button
+      mat-raised-button
+      class="nsc-form-actions__button"
+      color="accent"
+      type="button"
+      (click)="cancel()">Cancel</button>
+    <nsc-spacer horizontal="true" size="md"></nsc-spacer>
+    <button
+      mat-raised-button
+      class="nsc-form-actions__button nsc-form-actions__button--next"
+      color="primary"
+      type="button"
+      [disabled]="!formGroup.valid"
+      (click)="continue()">Add to Cart <mat-icon aria-hidden="true">chevron_right</mat-icon></button>
+  </div>
+</form>
+
+<!-- <nsc-spacer size="md"></nsc-spacer>
+<nsc-card>
+  <nsc-card-title note="development mode only">Form Data Model</nsc-card-title>
+  <nsc-card-content>
+    <textarea class="json">{{ formGroup.value | json }}</textarea>
+  </nsc-card-content>
+</nsc-card> -->

@@ -1,0 +1,96 @@
+<div>
+  <div class="mat-caption">File name(s): Supports alpha numeric characters, non-consecutive periods, dashes, underscores and spaces</div>
+  <div class="mat-caption">Maximum file name size: 64 characters</div>
+  <div class="mat-caption">Number of documents allowed: {{ maxFileCount }}</div>
+  <div class="mat-caption">Supported formats: {{ '.' + allowedFileTypes.join(', .') }}</div>
+</div>
+<nsc-spacer size="sm"></nsc-spacer>
+<div>
+  <button
+    for="input-files"
+    type="button"
+    mat-button class="nsc-button"
+    [disabled]="uploader.queue.length >= maxFileCount"
+    (click)="fileInputClick()">
+    Add File
+  </button>
+  <input ng2FileSelect
+    id="input-files"
+    type="file"
+    [disabled]="uploader.queue.length >= maxFileCount"
+    [accept]="'.' + allowedFileTypes.join(', .')"
+    [uploader]="uploader"
+    (onFileSelected)="onFileSelected($event)"/>
+
+  <div *ngIf="uploader.queue.length > 0">
+    <mat-table #table [dataSource]="dataSource">
+
+      <ng-container matColumnDef="itemName">
+        <mat-header-cell *matHeaderCellDef>File</mat-header-cell>
+        <mat-cell *matCellDef="let item"> {{ item.file.name }} </mat-cell>
+      </ng-container>
+
+      <ng-container matColumnDef="itemSize">
+        <mat-header-cell *matHeaderCellDef>Size</mat-header-cell>
+        <mat-cell *matCellDef="let item">
+          {{ roundFileSizeValue(item.file.size) }}
+        </mat-cell>
+      </ng-container>
+
+      <ng-container matColumnDef="itemStatus">
+        <mat-header-cell *matHeaderCellDef>Status</mat-header-cell>
+        <mat-cell *matCellDef="let item">
+          <div></div>
+          <span *ngIf="!item.isSuccess && !item.isError && !item.isCancel && !item.isUploading">Pending</span>
+          <span *ngIf="item.isSuccess">Uploaded</span>
+          <span *ngIf="item.isError">Error</span>
+          <span *ngIf="item.isCancel">Cancelled</span>
+          <span *ngIf="item.isUploading">Uploading...</span>
+        </mat-cell>
+      </ng-container>
+
+      <ng-container matColumnDef="itemButtons">
+        <mat-header-cell *matHeaderCellDef></mat-header-cell>
+        <mat-cell *matCellDef="let item">
+          <button *ngIf="item.isError || item.isCancel" mat-icon-button (click)="retryFileClick(item)">
+            <mat-icon>replay</mat-icon>
+          </button>
+          <button mat-icon-button (click)="removeFileClick(item)">
+            <mat-icon>cancel</mat-icon>
+          </button>
+        </mat-cell>
+      </ng-container>
+
+      <mat-header-row *matHeaderRowDef="columnsToDisplay"></mat-header-row>
+      <mat-row *matRowDef="let row; columns: columnsToDisplay;"></mat-row>
+
+    </mat-table>
+
+    <nsc-spacer size="sm"></nsc-spacer>
+
+    <button
+      type="button"
+      mat-button class="nsc-button"
+      (click)="uploadAllClick()"
+      [disabled]="!uploader.getNotUploadedItems().length || uploader.isUploading">Upload All</button>
+    <button
+      type="button"
+      mat-button class="nsc-button"
+      (click)="cancelAllClick()"
+      [disabled]="!uploader.isUploading">Cancel All</button>
+    <button
+      type="button"
+      mat-button
+      class="nsc-button"
+      (click)="removeAllClick()"
+      [disabled]="!uploader.queue.length">Remove All</button>
+
+    <div><!--*ngIf="uploader.isUploading"-->
+      <nsc-spacer size="md"></nsc-spacer>
+      <div class="mat-subheading-1">Upload progress:</div>
+      <div class="progress" style="">
+        <div class="progress-bar" role="progressbar" [ngStyle]="{ 'width': uploader.progress + '%' }"></div>
+      </div>
+    </div>
+  </div>
+</div>

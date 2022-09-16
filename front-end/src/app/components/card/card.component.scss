@@ -1,0 +1,11 @@
+@import '~@angular/material/theming';
+
+.nsc-card {
+  // copy of mat-card minus the padding;
+  display: block;
+  position: relative;
+  border-radius: 2px;
+  background: white;
+
+  @include mat-elevation(2);
+}

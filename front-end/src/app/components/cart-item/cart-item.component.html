@@ -1,0 +1,104 @@
+<div class="nsc-table mat-typography">
+  <div class="nsc-table__title" *ngIf="!show.buttons">
+    <div class="nsc-table__title--content">
+      RECIPIENT: {{ recipient.address.recipient }}
+    </div>
+  </div>
+
+  <div class="nsc-table__title" *ngIf="show.buttons">
+    <div class="nsc-table__title--content-buttons">
+      RECIPIENT: {{ recipient.address.recipient }}
+    </div>
+    <div class="nsc-table__title--buttons">
+      <a role="link" tabindex="0" (click)="edit()">
+        <mat-icon>edit</mat-icon> <span>Edit</span>
+      </a>
+      <a role="link" tabindex="0" (click)="delete()">
+        <mat-icon>delete</mat-icon> <span>Remove</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="nsc-table__row">
+    <div class="nsc-table__col" *ngIf="!show.electronic">
+      {{ recipient.address.addressLine1 }}<br>
+      {{ recipient.address.addressLine2 }}<br *ngIf="recipient.address.addressLine2">
+      {{ recipient.address.city }}, {{ recipient.address.state }} {{ recipient.address.zip }}<br>
+      {{ recipient.address.country }}
+    </div>
+    <div class="nsc-table__col" *ngIf="show.electronic">
+      {{ recipient.address.emailPrimary }}
+    </div>
+  </div>
+
+  <div class="nsc-table__row">
+    <div class="nsc-table__col">
+      {{ content.processingOptionDisplay }}
+    </div>
+  </div>
+
+  <div class="nsc-table__row" *ngIf="content.transcriptTypeFee !== 0">
+    <div class="nsc-table__col nsc-table__col--label">
+      <strong>Transcript Type:</strong> {{ content.transcriptTypeDisplay }}
+    </div>
+    <div class="nsc-table__col nsc-table__col--value">
+      <strong>
+        {{ content.transcriptTypeFee | currency }}
+      </strong>
+    </div>
+  </div>
+
+  <div class="nsc-table__row">
+    <div class="nsc-table__col nsc-table__col--label">
+      <strong>Delivery Method:</strong> {{ content.deliveryMethodDisplay }}
+    </div>
+    <div class="nsc-table__col nsc-table__col--value">
+      <strong *ngIf="content.deliveryMethodFee !== 0">
+        {{ content.deliveryMethodFee | currency }}
+      </strong>
+    </div>
+  </div>
+
+  <div class="nsc-table__row">
+    <div class="nsc-table__col">
+      <strong>Important:</strong><br />
+      {{ content.deliveryMethodHelpText }}
+    </div>
+  </div>
+
+  <div class="nsc-table__row" *ngIf="recipient.delivery.specialInstructions">
+    <div class="nsc-table__col">
+      <strong>Special Instructions:</strong><br />
+      {{ recipient.delivery.specialInstructions }}
+    </div>
+  </div>
+
+  <div class="nsc-table__row">
+    <div class="nsc-table__col nsc-table__col--label">
+      <strong>Quantity:</strong> {{ content.howMany }} {{ content.howMany > 1 ? 'Copies' : 'Copy' }}
+    </div>
+    <div class="nsc-table__col nsc-table__col--value">
+      <strong *ngIf="content.howManyFee !== 0">
+        {{ content.howManyFee | currency }}
+      </strong>
+    </div>
+  </div>
+
+  <div class="nsc-table__row" *ngIf="show.onlineProcessingFee">
+    <div class="nsc-table__col nsc-table__col--label">
+      Online Processing Fee
+    </div>
+    <div class="nsc-table__col nsc-table__col--value">
+      <strong>{{ processingFee | currency }}</strong>
+    </div>
+  </div>
+
+  <div class="nsc-table__row">
+    <div class="nsc-table__col nsc-table__col--label" style="text-align: right;">
+      <strong>Total Fee for this Recipient</strong>
+    </div>
+    <div class="nsc-table__col nsc-table__col--value nsc-table__col--total">
+      <strong>{{ recipient.totalFee | currency }}</strong>
+    </div>
+  </div>
+</div>

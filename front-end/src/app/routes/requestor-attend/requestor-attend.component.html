@@ -1,0 +1,158 @@
+<form [formGroup]="formGroup" novalidate>
+  <nsc-card *ngIf="show.programQuestions">
+    <nsc-card-title note="{{ require.programs ? '' : '(Optional)' }}">Schools / Programs Attended</nsc-card-title>
+    <nsc-card-content>
+      <div class="mat-typography" *ngIf="require.programs">
+        A program is required.
+      </div>
+      <div *ngFor="let schoolProgram of formGroup.controls.programs.controls; let i = index" [formGroup]="schoolProgram">
+        <div class="row align-items-center">
+          <div class="col-12 col-md-4">
+            <mat-checkbox
+              formControlName="program"
+              (change)="changeProgram($event, schoolProgram.controls['yearFrom'], schoolProgram.controls['yearTo'])">{{ content.programLabels[i] }}</mat-checkbox>
+          </div>
+          <div class="col-12 col-md-4 col-lg-2" *ngIf="show.programYearQuestions">
+            <nsc-form-field-input
+              controlName="yearFrom"
+              hint="YYYY"
+              placeholder="Begin Year"
+              [group]="schoolProgram"
+              [required]="require.programsYear"
+              [mask]="masks.year"></nsc-form-field-input>
+          </div>
+          <div class="col-12 col-md-4 col-lg-2" *ngIf="show.programYearQuestions">
+            <nsc-form-field-input
+              controlName="yearTo"
+              hint="YYYY"
+              placeholder="End Year"
+              [group]="schoolProgram"
+              [required]="false"
+              [mask]="masks.year"></nsc-form-field-input>
+          </div>
+        </div>
+        <hr class="nsc-hr" *ngIf="i < content.programLabels.length - 1">
+      </div>
+    </nsc-card-content>
+  </nsc-card>
+
+  <nsc-spacer size="md"></nsc-spacer>
+
+  <nsc-card *ngIf="show.degreeQuestions">
+    <nsc-card-title note="(Optional)">Degree / Certificate Titles and Award Years</nsc-card-title>
+    <nsc-card-content>
+      <div class="row">
+        <div class="col-12 col-md-8 col-lg-6">
+          <nsc-form-field-input
+            controlName="degree1"
+            maxlength="30"
+            placeholder="Degree / Certificate Title"
+            [required]="false"
+            [group]="formGroup"></nsc-form-field-input>
+        </div>
+        <div class="col-12 col-md-4 col-lg-2">
+          <nsc-form-field-input
+            controlName="year1"
+            hint="YYYY"
+            placeholder="Award Year"
+            [group]="formGroup"
+            [required]="false"
+            [mask]="masks.year"></nsc-form-field-input>
+        </div>
+      </div>
+
+      <hr class="nsc-hr d-md-none">
+
+      <div class="row">
+        <div class="col-12 col-md-8 col-lg-6">
+          <nsc-form-field-input
+            controlName="degree2"
+            maxlength="30"
+            placeholder="Degree / Certificate Title"
+            [required]="false"
+            [group]="formGroup"></nsc-form-field-input>
+        </div>
+        <div class="col-12 col-md-4 col-lg-2">
+          <nsc-form-field-input
+            controlName="year2"
+            hint="YYYY"
+            placeholder="Award Year"
+            [group]="formGroup"
+            [required]="false"
+            [mask]="masks.year"></nsc-form-field-input>
+        </div>
+      </div>
+
+      <hr class="nsc-hr d-md-none">
+
+      <div class="row">
+        <div class="col-12 col-md-8 col-lg-6">
+          <nsc-form-field-input
+            controlName="degree3"
+            maxlength="30"
+            placeholder="Degree / Certificate Title"
+            [required]="false"
+            [group]="formGroup"></nsc-form-field-input>
+        </div>
+        <div class="col-12 col-md-4 col-lg-2">
+          <nsc-form-field-input
+            controlName="year3"
+            hint="YYYY"
+            placeholder="Award Year"
+            [group]="formGroup"
+            [required]="false"
+            [mask]="masks.year"></nsc-form-field-input>
+        </div>
+      </div>
+
+      <hr class="nsc-hr d-md-none">
+
+      <div class="row">
+        <div class="col-12 col-md-8 col-lg-6">
+          <nsc-form-field-input
+            controlName="degree4"
+            maxlength="30"
+            placeholder="Degree / Certificate Title"
+            [required]="false"
+            [group]="formGroup"></nsc-form-field-input>
+        </div>
+        <div class="col-12 col-md-4 col-lg-2">
+          <nsc-form-field-input
+            controlName="year4"
+            hint="YYYY"
+            placeholder="Award Year"
+            [group]="formGroup"
+            [required]="false"
+            [mask]="masks.year"></nsc-form-field-input>
+        </div>
+      </div>
+    </nsc-card-content>
+  </nsc-card>
+
+  <nsc-spacer size="md"></nsc-spacer>
+
+  <div class="nsc-form-actions">
+    <button
+      mat-raised-button
+      class="nsc-form-actions__button"
+      color="accent"
+      type="button"
+      (click)="cancel()">Cancel Order</button>
+    <nsc-spacer horizontal="true" size="md"></nsc-spacer>
+    <button
+      mat-raised-button
+      class="nsc-form-actions__button nsc-form-actions__button--next"
+      color="primary"
+      type="button"
+      (click)="continue()"
+      [disabled]="!formGroup.valid">Continue <mat-icon aria-hidden="true">chevron_right</mat-icon></button>
+  </div>
+</form>
+
+<!-- <nsc-spacer size="md"></nsc-spacer>
+<nsc-card>
+  <nsc-card-title note="development mode only">Form Data Model</nsc-card-title>
+  <nsc-card-content>
+    <textarea class="json">{{ formGroup.value | json }}</textarea>
+  </nsc-card-content>
+</nsc-card> -->

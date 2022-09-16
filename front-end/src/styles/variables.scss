@@ -1,0 +1,51 @@
+// Bootstrap grid breakpoints;
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+
+$font-opacity: 0.8; // used on some text nodes to adjust the color consistently;
+
+$color-gray-dark: #4f4f4f;
+$color-gray-medium: #8a8b8a;
+$color-gray-light: #cfcfcf;
+
+$color-gray-bg-dark: #d8d8d8;
+$color-gray-bg-medium: #f4f4f4;
+$color-gray-bg-light: #e4e4e3;
+
+$color-red: #b30c1c;
+$color-green: #3aa654;
+
+$nsc-mat-red: (
+  50: $color-red,
+  100: $color-red,
+  200: $color-red,
+  300: $color-red,
+  400: $color-red,
+  500: $color-red,
+  600: $color-red,
+  700: $color-red,
+  800: $color-red,
+  900: $color-red,
+  A100: $color-red,
+  A200: $color-red,
+  A400: $color-red,
+  A700: $color-red,
+  contrast: (
+    50: #fff,
+    100: #fff,
+    200: #fff,
+    300: #fff,
+    400: #fff,
+    500: #fff,
+    600: #fff,
+    700: #fff,
+    800: #fff,
+    900: #fff,
+    A100: #fff,
+    A200: #fff,
+    A400: #fff,
+    A700: #fff,
+  )
+);

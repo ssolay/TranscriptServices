@@ -1,0 +1,26 @@
+<div class="row">
+  <div class="col-12 col-md-6 col-lg-4">
+    <nsc-form-field-input
+      controlName="{{ controlNamePrimary }}"
+      hint="{{ content.hintPrimary }}"
+      maxlength="{{ maxlength }}"
+      placeholder="{{ placeholder }}"
+      type="{{ type }}"
+      [mask]="mask"
+      [autocomplete]="autocomplete"
+      [group]="group"></nsc-form-field-input>
+  </div>
+  <div class="col-12 col-md-6 col-lg-4">
+    <nsc-form-field-input
+      controlName="{{ controlNameConfirm }}"
+      hint="{{ content.hintConfirm }}"
+      maxlength="{{ maxlength }}"
+      onPaste="return false"
+      onCopy="return false"
+      placeholder="Confirm {{ placeholder }}"
+      type="{{ type }}"
+      [autocomplete]="values.autocompleteConfirm"
+      [group]="group"
+      [mask]="mask"></nsc-form-field-input>
+  </div>
+</div>

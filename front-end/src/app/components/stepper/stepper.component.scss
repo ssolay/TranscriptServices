@@ -1,0 +1,109 @@
+@import '~breakpoint-sass/stylesheets/breakpoint';
+@import '~styles/variables';
+
+.nsc-stepper {
+  display: flex;
+  align-items: center;
+
+  &__col {
+    padding: 0 5px;
+
+    &.selected {
+      flex-grow: 1; // ensure the content takes up 100% width;
+    }
+
+    @include breakpoint($breakpoint-lg) {
+      padding: 0 10px;
+    }
+
+    &:first-child {
+      padding-left: 0;
+    }
+
+    &:last-child {
+      padding-right: 0;
+    }
+  }
+
+  &__step {
+    display: flex;
+    align-items: center;
+
+    &.selected {
+      .nsc-stepper__step--icon {
+        background: $color-gray-dark;
+        color: #fff;
+      }
+      .nsc-stepper__step--label {
+        display: block;
+        font-weight: 500;
+      }
+    }
+
+    &--icon {
+      width: 32px;
+      border: 2px solid $color-gray-dark;
+      background: #fff;
+      border-radius: 50%;
+      height: 32px;
+      width: 32px;
+      text-align: center;
+      line-height: 27px;
+      font-size: 16px;
+      font-weight: 700;
+    }
+
+    &--label {
+      display: none;
+      width: calc(100% - 32px);
+      padding-left: 10px;
+
+      @include breakpoint($breakpoint-md) {
+        display: block;
+        padding-left: 10px;
+      }
+
+      @include breakpoint($breakpoint-lg) {
+        padding-left: 20px;
+      }
+    }
+  }
+
+  &__indicator {
+    width: 20px;
+    background: $color-gray-light;
+    height: 1px;
+    position: relative;
+
+    @include breakpoint($breakpoint-md) {
+      min-width: 40px;
+    }
+
+    @include breakpoint($breakpoint-lg) {
+      min-width: 80px;
+    }
+
+    @include breakpoint($breakpoint-xl) {
+      min-width: 120px;
+    }
+
+    &--past,
+    &--progress {
+      &::after {
+        content: "";
+        position: absolute;
+        top: -1px;
+        left: 0;
+        height: 3px;
+        width: 100%;
+        background: $color-gray-dark;
+      }
+    }
+
+    &--progress {
+      &::after {
+        width: 50%;
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+@import '~breakpoint-sass/stylesheets/breakpoint';
+@import '~styles/variables';
+
+// emulate mat-hint;
+.nsc-input-file__hint {
+  margin-top: 0.41666667em;
+  font-size: 75%;
+
+  @include breakpoint($breakpoint-sm) {
+    margin-top: 0;
+  }
+}

@@ -1,0 +1,29 @@
+export interface ApiPostRecipient {
+  amcasId: string;
+  amcasTranscriptId: string;
+  attention: string;
+  city: string;
+  country: string;
+  deliveryMethodId: number;
+  deptProcessingOption: string;
+  email: string;
+  etxDeliveryFileFormat: string;
+  etxDeptRecipientId: string;
+  exchangeNetworkTypeCode: string;
+  ficeCode: string;
+  liaisonCasId: string;
+  lsacId: string;
+  organization: string;
+  phone: string;
+  processingOption: string;
+  quantityId: number;
+  sendToType: string;
+  specialInstr: string;
+  state: string;
+  street1: string;
+  street2: string;
+  toOrderId: number;
+  xcriptPurposeId: string;
+  xcriptTypeId: string;
+  zip: string;
+}

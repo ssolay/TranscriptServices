@@ -1,0 +1,166 @@
+<form [formGroup]="formGroup" novalidate>
+  <nsc-card>
+    <nsc-card-title note="All fields required, unless otherwise indicated">Sign Consent Form</nsc-card-title>
+    <nsc-card-content>
+      <div class="mat-typography">
+        <p>
+          A signed consent form is required to release your transcript. If we do not receive your consent form within 30 calendar days from the date you submit your request, your order will be canceled and you will not be charged.
+        </p>
+
+        <hr class="nsc-hr">
+
+        <p>
+          <strong>Requestor:</strong> {{ content.requestor }}<br>
+          <strong>Order Number:</strong> <span *ngIf="values.signatureDate">{{ content.orderId }}</span>
+        </p>
+
+        <div class="mat-subheading-2">
+          <strong>Transcript Recipient(s)</strong>
+          <div *ngFor="let recipient of content.recipients">
+            {{ recipient.organization }}
+          </div>
+        </div>
+      </div>
+    </nsc-card-content>
+  </nsc-card>
+
+  <nsc-spacer size="md"></nsc-spacer>
+
+  <nsc-card *ngIf="show.electronicConsentForm">
+    <nsc-card-title>Electronic Consent Form</nsc-card-title>
+    <nsc-card-content>
+      <div class="mat-typography">
+        <p>
+          The fastest way to submit your consent form is electronically. Use your finger or mouse to draw your signature in the box. After you submit your signature, you may download a signed copy of the consent form for your records prior to providing payment in the next step.
+        </p>
+
+        <hr class="nsc-hr">
+
+        <strong>Need Help Signing?</strong>
+
+        <nsc-spacer size="sm"></nsc-spacer>
+
+        <div class="row nsc-row--12">
+          <div class="col-auto">
+            <mat-icon class="nsc-icon--large">desktop_mac</mat-icon>
+          </div>
+          <div class="col mat-typography">
+            <p class="nsc-icon__align">
+              <strong>Desktop</strong>
+            </p>
+            <p>
+              Hold down the left button on your mouse and, using the mouse, sign your name in the signature box as you would with a pen.
+            </p>
+            <p>
+              <strong>Mac with Trackpad only:</strong> Hold down the options button on the keyboard, continue to hold down the options button while pressing your finger onto the trackpad, sign your name in the signature box while signing your name on your trackpad.
+            </p>
+          </div>
+        </div>
+
+        <nsc-spacer size="sm"></nsc-spacer>
+
+        <div class="row nsc-row--12">
+          <div class="col-auto">
+            <mat-icon class="nsc-icon--large">smartphone</mat-icon>
+          </div>
+          <div class="col mat-typography">
+            <p class="nsc-icon__align">
+              <strong>Mobile</strong>
+            </p>
+            <p>
+              Sign your name in the signature box using your finger as a stylus
+            </p>
+          </div>
+        </div>
+
+        <nsc-spacer size="lg"></nsc-spacer>
+
+        <p class="mat-caption" [class.mat-error]="show.signatureError">
+          <strong>Sign Here</strong>
+
+          <span *ngIf="show.signatureError">
+            &ndash; The signature does not meet acceptable standards. Please clear and re-sign.
+          </span>
+        </p>
+
+        <div class="row">
+          <div class="col-12 col-md-10 col-lg-8">
+            <div id="signature"></div>
+          </div>
+        </div>
+
+        <p>
+          <strong>Signature Date:</strong> {{ values.signatureDate }}
+        </p>
+      </div>
+
+      <hr class="nsc-hr">
+
+      <div class="row">
+        <div class="col-12 col-md-10 offset-md-1">
+          <div class="mat-caption" style="text-align: center;">
+            By submitting this signature, I, <strong>{{ content.requestor }}</strong>, certify that I am the above named student and my electronic signature provided on this form is authentic and has the same validity and legally binding effect as signing this consent form by my hand in ink.
+          </div>
+        </div>
+      </div>
+
+      <nsc-spacer size="sm"></nsc-spacer>
+
+      <div class="nsc-form-actions">
+        <button
+          mat-button
+          class="nsc-button nsc-form-actions__button"
+          type="button"
+          (click)="clearSignature()"
+          [disabled]="values.disableClearButton">Clear Signature</button>
+        <nsc-spacer horizontal="true" size="sm"></nsc-spacer>
+        <button
+          mat-button
+          class="nsc-button nsc-form-actions__button"
+          type="button"
+          (click)="captureSignature()"
+          [disabled]="values.disableAcceptButton">Accept Signature</button>
+      </div>
+    </nsc-card-content>
+  </nsc-card>
+
+  <div *ngIf="show.printableConsentForm">
+    <nsc-spacer size="md"></nsc-spacer>
+
+    <nsc-card>
+      <nsc-card-title>Printable Consent Form</nsc-card-title>
+      <nsc-card-content>
+        <div class="mat-typography">
+          If you would prefer to provide a signed paper copy, you may <a href="#">download a copy of the consent form</a> and either mail a copy to National Student Clearinghouse or provide a scanned copy in an e-mail attachment. Your order will be cancelled if a consent form is not received within 30 days.
+        </div>
+      </nsc-card-content>
+    </nsc-card>
+  </div>
+
+  <nsc-spacer size="md"></nsc-spacer>
+
+  <div class="nsc-form-actions">
+    <button
+      mat-raised-button
+      class="nsc-form-actions__button"
+      color="accent"
+      type="button"
+      (click)="cancel()">Cancel Order</button>
+    <nsc-spacer horizontal="true" size="md"></nsc-spacer>
+    <button
+      mat-raised-button
+      class="nsc-form-actions__button nsc-form-actions__button--next"
+      color="primary"
+      type="button"
+      (click)="continue()"
+      [disabled]="!formGroup.valid">Continue <mat-icon aria-hidden="true">chevron_right</mat-icon></button>
+  </div>
+</form>
+
+<!-- <nsc-spacer size="md"></nsc-spacer>
+<nsc-card>
+  <nsc-card-title note="development mode only">Form Data Model</nsc-card-title>
+  <nsc-card-content>
+    <textarea class="json">{{ formGroup.value | json }}</textarea>
+  </nsc-card-content>
+</nsc-card> -->

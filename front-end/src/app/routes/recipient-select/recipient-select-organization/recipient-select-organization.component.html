@@ -1,0 +1,20 @@
+<div class="row">
+  <div class="col-12 col-md-8">
+    <nsc-form-field-select
+      controlName="organization"
+      placeholder="Select Organization"
+      [group]="formGroup"
+      [selectObjects]="values.organizations$.value"></nsc-form-field-select>
+  </div>
+  <div class="col-12 col-md-8 col-lg-4" *ngIf="formGroup.controls['organizationNotInList'].enabled">
+    <nsc-form-field-input
+      controlName="organizationNotInList"
+      maxlength="60"
+      placeholder="Enter an Organization"
+      [group]="formGroup"></nsc-form-field-input>
+  </div>
+
+  <nsc-recipient-select-department
+    class="col-12"
+    [formGroup]="formGroup"></nsc-recipient-select-department>
+</div>

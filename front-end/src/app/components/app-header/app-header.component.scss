@@ -1,0 +1,309 @@
+@import '~breakpoint-sass/stylesheets/breakpoint';
+@import '~styles/variables';
+
+$color-band-default: #4ca3cb;
+$color-band-dark: #404040;
+$color-band-light: #404040;
+
+$color-text-default: #595959;
+$color-text-dark: #ffffff;
+$color-text-light: #000000;
+
+$color-text-hover-default: $color-gray-dark;
+$color-text-hover-dark: #ffffff;
+$color-text-hover-light: #000000;
+
+$color-border-default: $color-gray-bg-light;
+$color-border-dark: rgba(255, 255, 255, 0.25);
+$color-border-light: rgba(0, 0, 0, 0.25);
+
+.nsc-app-header {
+  // dark theme for the header;
+  // this is applied when the school color (applied to the background) is dark;
+  // when the background is dark, we need to shift the content colors to a lighter shade;
+  &--dark {
+    .nsc-app-header__band {
+      background-color: $color-band-dark;
+    }
+
+    .nsc-app-header__title,
+    .nsc-app-header__branding-title {
+      color: $color-text-dark;
+    }
+
+    .nsc-app-header__help a {
+      color: $color-text-dark;
+
+      &:hover {
+        color: $color-text-hover-dark;
+      }
+    }
+
+    .nsc-app-header__cart {
+      color: $color-text-dark;
+
+      &::before {
+        background-color: $color-border-dark;
+      }
+
+      &-content {
+        color: $color-text-dark;
+
+        &--button {
+          &:hover {
+            color: $color-text-hover-dark;
+          }
+        }
+      }
+    }
+
+    .nsc-app-header__row--sm + .nsc-app-header__row--sm {
+      border-color: $color-border-dark;
+    }
+  }
+
+  &--light {
+    .nsc-app-header__band {
+      background-color: $color-band-light;
+    }
+
+    .nsc-app-header__title,
+    .nsc-app-header__branding-title {
+      color: $color-text-light;
+    }
+
+    .nsc-app-header__help a {
+      color: $color-text-light;
+
+      &:hover {
+        color: $color-text-hover-light;
+      }
+    }
+
+    .nsc-app-header__cart {
+      color: $color-text-light;
+
+      &::before {
+        background-color: $color-border-light;
+      }
+
+      &-content {
+        color: $color-text-light;
+
+        &--button {
+          &:hover {
+            color: $color-text-hover-light;
+          }
+        }
+      }
+    }
+
+    .nsc-app-header__row--sm + .nsc-app-header__row--sm {
+      border-color: $color-border-light;
+    }
+  }
+
+  // there are 2 sets of HTML, one for desktop, one for mobile;
+  // easier than adjusting the styles;
+  &__row {
+    // row to show on mobile;
+    // mobile header has a different layout (and less content);
+    &--sm {
+      min-height: 45px;
+
+      @include breakpoint($breakpoint-md) {
+        display: none;
+      }
+
+      // mobile view has two stacked rows;
+      // add a border to the second one;
+      + .nsc-app-header__row--sm {
+        border-top: 1px solid $color-border-default;
+      }
+    }
+
+    // row to show above mobile;
+    // more content than the mobile view;
+    &--md {
+      display: none;
+
+      @include breakpoint($breakpoint-md) {
+        display: flex;
+      }
+    }
+  }
+
+  // override Bootstrap grid spacing;
+  .nsc-row--12 {
+    min-height: 50px;
+
+    @include breakpoint($breakpoint-md) {
+      min-height: 80px;
+    }
+  }
+
+   // reduce the default icon size;
+  &__icon {
+    font-size: 20px;
+    height: 20px;
+    width: 20px;
+  }
+
+  // title of the application;
+  &__title {
+    color: $color-text-default;
+    line-height: 1;
+    margin: 0;
+    padding: 0;
+
+    @include breakpoint($breakpoint-md) {
+      font-size: 18px;
+    }
+  }
+
+  // NSC and school logos;
+  &__logo {
+    &--nsc {
+      display: block;
+      width: 96px;
+      height: 30px;
+      margin: 0 auto;
+
+      @include breakpoint($breakpoint-md) {
+        width: 128px;
+      }
+    }
+
+    &--school {
+      display: block;
+      max-height: 30px;
+      max-width: 225px;
+
+      @include breakpoint($breakpoint-md) {
+        max-height: 40px;
+      }
+
+      @include breakpoint($breakpoint-lg) {
+        max-height: 50px;
+      }
+    }
+  }
+
+  // school name (displayed if the school doesn't have a logo);
+  &__school-name {
+    display: block;
+    max-width: 225px;
+    text-align: center;
+    font-size: 10px;
+    line-height: 14px;
+
+    @include breakpoint($breakpoint-md) {
+      font-size: 12px;
+      line-height: 20px;
+      max-width: none;
+      padding: 0 15px; // padding to ensure the text doesn't get too close to the help icon;
+    }
+  }
+
+  // help icon
+  &__help {
+    height: 50px;
+    align-items: center;
+    display: flex;
+
+    @include breakpoint($breakpoint-md) {
+      height: 80px;
+    }
+
+    a {
+      align-items: center;
+      color: $color-text-default;
+      display: flex;
+      text-decoration: none;
+
+      span {
+        padding-left: 3px;
+      }
+
+      &:hover {
+        color: $color-text-hover-default;
+
+        span {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  // cart container (not always visible);
+  &__cart {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 0 0 0 20px;
+    font-weight: 700;
+    height: 50px;
+    color: $color-text-default;
+
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 5px;
+      width: 1px;
+      background: $color-border-default;
+    }
+
+    @include breakpoint($breakpoint-md) {
+      height: 80px;
+    }
+
+    // wrapper for the content of the cart;
+    &-content {
+      display: flex;
+      align-content: center;
+      color: $color-text-default;
+      text-decoration: none;
+      border: 0;
+      background: 0;
+      padding: 0;
+
+      // when this is a button, give it some interactive styles;
+      &--button {
+        cursor: pointer;
+
+        &:hover {
+          color: $color-text-hover-default;
+        }
+      }
+    }
+
+    // number of items in the cart;
+    &-count {
+      background: $color-green;
+      border-radius: 12px;
+      color: #fff;
+      margin: 0 10px;
+      padding: 0 15px 1px;
+      font-weight: 400;
+    }
+
+    // overlay to indicate the cart isn't usable;
+    &-disabled {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 6px;
+      opacity: 0.5;
+    }
+  }
+
+  // band of color at the bottom of the header;
+  &__band {
+    background-color: $color-band-default;
+    height: 3px;
+  }
+}
